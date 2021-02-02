@@ -8,7 +8,7 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: GDSL-UL/soft_install
+github-repo: GDSL-UL/r_install
 description: "Installation Guide for R and Python"
 ---
 
