@@ -1,4 +1,4 @@
-# Installation Guide
+# RStudio Installation Guide
 
 This guide provides step-by-step description on how to install and access RStudio. This guide supports **MacOS** and **Windows** operating systems.
 

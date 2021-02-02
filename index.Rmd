@@ -1,5 +1,5 @@
 --- 
-title: "Software Installation Guide"
+title: "RStudio Installation Guide"
 author: "Francisco Rowe, Dani Arribas-Bel"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -14,7 +14,7 @@ description: "Installation Guide for R and Python"
 
 # Purpose {.unnumbered}
 
-This resource provides step-by-step descriptions on how to install and run Python for Geographic Data Science from your own computer.
+This resource provides step-by-step descriptions on how to install and run RStudio for Geographic Data Science from your own computer.
 
 Select your Operating System and follow the steps.
 
