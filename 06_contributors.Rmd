@@ -6,3 +6,5 @@ The following additional contributors have helped improve the resource:
 
 - Dominik Fahrner
 - Natalie Rose
+- Michael Mahony
+- Caitlin Robinson

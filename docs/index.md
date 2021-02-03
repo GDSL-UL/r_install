@@ -1,7 +1,7 @@
 --- 
 title: "R Installation Guide"
 author: "Francisco Rowe, Dani Arribas-Bel"
-date: "2021-02-02"
+date: "2021-02-03"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -14,7 +14,7 @@ description: "Installation Guide for R"
 
 # Purpose {.unnumbered}
 
-This resource provides step-by-step descriptions on how to install and run RStudio for Geographic Data Science from your own computer.
+This resource provides step-by-step descriptions on how to install and run RStudio for 'Spatial Modelling for Data Scientists' from your own computer.
 
 Select your Operating System and follow the steps.
 
