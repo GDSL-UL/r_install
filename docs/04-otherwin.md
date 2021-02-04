@@ -5,11 +5,9 @@ This guide covers the installation of R and RStudio on machines running Windows 
 <div class="alert alert-danger" style="font-size:120%">
 <b>IMPORTANT</b>: <br>
     
-1. If you are not sure what version of Windows you are running, check out this [guide](#windows-version).
+This module has been written using the most up-to-date versions of R, RStudio and relevant packages. To avoid software compatibility issues it is important you have these same versions installed on your home computer.
 
-2. This module has been written using the most up-to-date versions of R, RStudio and relevant packages. To avoid software compatibility issues it is important you have these same versions installed on your home computer.
-
-**Therefore, if you have R or RStudio already installed on your computer, please uninstall them before following the instructions below**
+**Therefore, if you have R or RStudio already installed on your computer, please uninstall them before following the instructions below.**
     
 </div>
 
