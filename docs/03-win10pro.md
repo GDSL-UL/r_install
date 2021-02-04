@@ -33,18 +33,18 @@ Once you have everything required ready to go, the first step is to install the 
 
 > [https://hub.docker.com/editions/community/docker-ce-desktop-windows/](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
 
-<img src="figs/chp3/docker_hub.png" width="825" style="display: block; margin: auto;" />
+<img src="figs/chp3/InstallDocker1.png" style="display: block; margin: auto;" />
 <br>
 
-2. Download a copy of the Docker Desktop (circled in red on the image above). Note this is about 400Mb so, depending on your connection, it might take a little bit.
-3. Double click on the file you downloaded (a white cute whale on a blue background) and the "installation wizard" will appear. 
+2. Download a copy of the Docker Desktop (highlighted in red on the image above). Click “Save File”. Note the file is approximately 490Mb so, depending on your internet connection, it might take a while to download. 
+3. Double click on the file you downloaded (a cute white whale on a blue background) and the "installation wizard" will appear. 
 4. Follow the instructions on the installation wizard to authorize the installer and proceed with the install.
 
 You can check the process has completed successfully by following these steps:
 
-1. Open PowelShell from the "Start Menu"
+1. Open PowerShell from the "Start Menu"
 
-<img src="figs/chp3/powershell.png" width="656" style="display: block; margin: auto;" />
+<img src="figs/chp3/InstallDocker2.png" style="display: block; margin: auto;" />
 <br>
 
 2. Check Docker is available by printing out the version you have installed:
@@ -52,11 +52,11 @@ You can check the process has completed successfully by following these steps:
 ```shell
 docker --version
 ```
+Note: Don’t worry if you have you installed a slightly different version of Docker - that’s OK. What you want to make sure is that it successfully prints out a version instead of a warning/error message (usually in red).
 
-<img src="figs/chp3/docker_version.png" width="598" style="display: block; margin: auto;" />
+<img src="figs/chp3/InstallDocker3.png" style="display: block; margin: auto;" />
 <br>
 
-Note that you might have installed a slightly different version and that is totally OK. What you want to make sure is that it successfully prints out a version instead of a warning/error message (usually in red).
 
 ### Installing the container {#winpro_docker_gds .unlisted .unnumbered}
 
@@ -66,10 +66,10 @@ Once you have Docker installed and running on your machine, installing everythin
 2. Run (type and hit "Enter") the following command:
 
 ```shell
-docker pull darribas/gds:5.0
+docker pull darribas/gdsr:1.0alpha
 ```
 
-<img src="figs/chp3/pull_gds.png" width="614" style="display: block; margin: auto;" />
+<img src="figs/chp3/InstallDocker4.png" style="display: block; margin: auto;" />
 <br>
 
 You will know this has completed when each line says 'Pull complete'.
@@ -83,9 +83,9 @@ Make sure you are connected to the internet and it is a stable connection. This 
 
 ### Check success {#winpro_success .unlisted .unnumbered}
 
-If everything has gone according to plan, you should see `darribas/gds:5.0` show up on your terminal when you type `docker image ls` (note in the image below there are other containers that are not required, do not worry if you don't have those or slightly different values on the ID and the "CREATED" columns, the important bit is having `darribas/gds:5.0` listed):
+If everything has gone according to plan, you should see `darribas/gds:5.0` show up on your terminal when you type `docker image ls`:
 
-<img src="figs/chp3/docker_success.png" width="614" style="display: block; margin: auto;" />
+<img src="figs/chp3/InstallDocker5.png" style="display: block; margin: auto;" />
 <br>
 
 ## Running RStudio Server {#winpro_run .unnumbered}
@@ -102,7 +102,7 @@ To start up Python through Docker, follow these steps:
 docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:5.0
 ```
 
-<img src="figs/chp3/docker_run.png" width="614" style="display: block; margin: auto;" />
+<img src="figs/chp3/docker_run.png" style="display: block; margin: auto;" />
 
 <br>
 
@@ -120,16 +120,16 @@ Please do NOT close the PowerShell window until you are finished in this Python 
 
 <br>
 
-<img src="figs/chp3/jupyter_token.png" width="696" style="display: block; margin: auto;" />
+<img src="figs/chp3/jupyter_token.png" style="display: block; margin: auto;" />
 
 3. The page that loads will prompt you for a password or a token. This can be found in the text in the terminal following the last command you ran. This will be a long series of numbers and letters will be preceded by `?token=`. Copy this long series of characters and paste into the password box in your browser.
 
-<img src="figs/chp3/docker_token.png" width="614" style="display: block; margin: auto;" />
+<img src="figs/chp3/docker_token.png" style="display: block; margin: auto;" />
 
 
 4. Now you are in Jupyter Lab, it should look like this, more or less:
 
-<img src="figs/chp3/lab.png" width="696" style="display: block; margin: auto;" />
+<img src="figs/chp3/lab.png" style="display: block; margin: auto;" />
 
 <br>
 
@@ -137,7 +137,7 @@ Please do NOT close the PowerShell window until you are finished in this Python 
 
 - This notebook is where you will run your code. Each shaded box is called a kernel. To test this out you can type `print('test')` into one of these kernels. To run the code use the shortcut `Ctrl + Enter`.
 
-<img src="figs/chp1/Figure12.png" width="693" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure12.png" style="display: block; margin: auto;" />
 
 <br>
 
@@ -151,22 +151,22 @@ Everything saved outside the `work` folder will be _destroyed_ as soon as you sh
 </div>
 
 - You can save your notebook using **File** > **Save notebook as**
-<img src="figs/chp1/Figure13.png" width="538" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure13.png" style="display: block; margin: auto;" />
 
 <br>
 
 - You can create new folders to organise your work
-<img src="figs/chp1/Figure14.png" width="540" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure14.png" style="display: block; margin: auto;" />
 
 <br>
 
 - And you can access other files on your machine through the 'work' folder in the File Browser. From here you can navigate to your Documents and designated folder for this module
 
-<img src="figs/chp1/Figure15a.png" width="538" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure15a.png" style="display: block; margin: auto;" />
 
-<img src="figs/chp1/Figure15b.png" width="538" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure15b.png" style="display: block; margin: auto;" />
 
-<img src="figs/chp1/Figure15c.png" width="538" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure15c.png" style="display: block; margin: auto;" />
 <br>
 
 ### Ending your session {.unlisted .unnumbered}
@@ -175,7 +175,7 @@ Once you have finished in your Jupyter session and have saved all your work, you
 
 Using `Ctrl + C` will prompt a `y/n` option. Either type `y` or `Ctrl + C` again to end the session. 
 
-<img src="figs/chp3/docker_end.png" width="614" style="display: block; margin: auto;" />
+<img src="figs/chp3/docker_end.png" style="display: block; margin: auto;" />
 
 <br>
 

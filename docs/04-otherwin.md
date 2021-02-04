@@ -21,21 +21,21 @@ R is the coding software that will execute the code you write in RStudio
 **NOTE: You need to install R before you install RStudio**
 
 
-<img src="figs/chp4/Picture_1.png" width="825" style="display: block; margin: auto;" />
+<img src="figs/chp4/Picture_1.png" style="display: block; margin: auto;" />
 
 -  Open the [R download page](https://cran.rstudio.com/) in your browser and click on **Download R for Windows**.  
 
-<img src="figs/chp4/Picture_2.png" width="962" style="display: block; margin: auto;" />
+<img src="figs/chp4/Picture_2.png" style="display: block; margin: auto;" />
 
 -  Click on **base** (highlighted in red here) as you are installing R for the first time. 
 
-<img src="figs/chp4/Picture_3.png" width="825" style="display: block; margin: auto;" />
+<img src="figs/chp4/Picture_3.png" style="display: block; margin: auto;" />
 
 -  Click on **Download R 4.0.3 for Windows** (highlighted in red here) to start the download. 
 
 ### Install R {.unlisted .unnumbered}
 
-<img src="figs/chp4/Picture_4.png" width="784" style="display: block; margin: auto;" />
+<img src="figs/chp4/Picture_4.png" style="display: block; margin: auto;" />
 
 -	Navigate to your **Downloads** folder and double click on the **_R-4.0.3-win_** file.
 
@@ -90,22 +90,22 @@ R is the coding software that will execute the code you write in RStudio
 
 R-Studio is the R user interface in which you can code. 
 
-<img src="figs/chp4/Studio_1.png" width="962" style="display: block; margin: auto;" />
+<img src="figs/chp4/Studio_1.png" style="display: block; margin: auto;" />
 
 - Go to the [R-studio download page](https://rstudio.com/products/rstudio/download/).
 
-<img src="figs/chp4/Studio_2.png" width="973" style="display: block; margin: auto;" />
+<img src="figs/chp4/Studio_2.png" style="display: block; margin: auto;" />
 
 - On the download page, scroll down and click on the **_Download_** button under **RStudio Desktop**. 
 
 
-<img src="figs/chp4/Studio_3.png" width="960" style="display: block; margin: auto;" />
+<img src="figs/chp4/Studio_3.png" style="display: block; margin: auto;" />
 
 - Click on **Download RStudio for Windows** to download the installation file 
 
 ### Install RStudio  {.unlisted .unnumbered}
 
-<img src="figs/chp4/Studio_4.png" width="825" style="display: block; margin: auto;" />
+<img src="figs/chp4/Studio_4.png" style="display: block; margin: auto;" />
 
 -	Navigate to your **Downloads** folder and double click on the **RStudio-1.4.1103** file.  
 **NOTE: Once you double click on the file, a window might pop up that asks you if you want to allow this app to make changes to your device click _YES_ to continue the installation**
@@ -136,7 +136,7 @@ R-Studio is the R user interface in which you can code.
 -	Once the intallation is completed, click on **_Finish_**.
 
 ## Open RStudio  {.unlisted .unnumbered}
-<img src="figs/chp4/Studio_10.png" width="962" style="display: block; margin: auto;" />
+<img src="figs/chp4/Studio_10.png" style="display: block; margin: auto;" />
 
 - To open RStudio, click on the Windows logo in the left bottom corner of your screen and either type **_RStudio_** or look for the **RStudio folder** in the menu. 
 - Double click on Rstudio to open it. 
