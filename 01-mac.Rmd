@@ -1,6 +1,6 @@
 # MacOS Installation {#macos .unnumbered}
 
-<div class="alert alert-danger" style="font-size:120%">
+<div class="alert alert-info" style="font-size:120%">
 <b>NOTE</b>: <br>
 
 This guide shows you how to install on MacOS via the `gds_env` [@gds_env]
@@ -15,13 +15,13 @@ To be able to complete this guide, your machine will need to meet the following 
 
 1. A stable internet connection
 2. ~10GB of space on your hard drive
-3. MacOS version 10.13 or newer i.e. High Sierra, Mojave or Catalina. If you are unsure what version you are running click on the Apple icon in the top left of the screen and then **About this Mac**.
+3. MacOS version 10.13 or newer i.e. High Sierra, Mojave, Catalina or Big Sur. If you are unsure what version you are running click on the Apple icon in the top left of the screen and then **About this Mac**.
 4. Mac hardware must be a 2010 model or newer
 
 ### Docker install steps {.unlisted .unnumbered}
 
 1. Go to the [dockerhub website](https://hub.docker.com/editions/community/docker-ce-desktop-mac/).
-2. Ensure you meet the criteria for download (it is the same as stated above) and then select 'Get Stable' button.
+2. Ensure you meet the criteria for download (it is the same as stated above) and then select 'Get Docker' button.
 
 ```{r fig1, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure1.png")
@@ -41,7 +41,7 @@ knitr::include_graphics("figs/chp1/Figure2.png")
 ```{r fig3, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure3.png")
 ```
-You may get further windows asking for access to the program. To these you can click **Open** > **Ok** > enter your account password and click **Install helper**
+You may get further windows asking for access to the program. To these you can click **Open** > **OK** > enter your account password and click **Install helper**
 
 <br>
 
@@ -78,33 +78,35 @@ knitr::include_graphics("figs/chp1/Figure5.png")
 ```{r fig6, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure6.png")
 ```
-Dont be alarmed if it seems to take a very long time.
+Don't be alarmed if it seems to take a very long time.
 
 <div class="alert alert-info" style="font-size:120%">
 <b>IMPORTANT</b>: <br>
     
-Make sure you are connected to the internet and it is a stable connection. This step involves the download of large amounts of data (ca. 10GB) so it might take a while. However, it only needs to be run once.
+Make sure you are connected to the internet and it is a stable connection. This step involves the download of large amounts of data (ca. 5.5GB) so it might take a while. However, it only needs to be run once.
    
 </div>
 
 ### Check success {.unlisted .unnumbered}
 
-You will know the process has completed successfully when each line says 'Pull complete' and the new line shows your machine name.
+You will know the process has completed successfully when each line says *'Pull complete'* and the new line shows your machine name.
 
-If everything has gone according to plan, you should see `darribas/gds:5.0` show up on your terminal when you type `docker image ls` (note in the image below there are other containers that are not required, do not worry if you don't have those or slightly different values on the ID and the "CREATED" columns, the important bit is having `darribas/gds:5.0` listed):
+If everything has gone according to plan, you should see `darribas/gdsr:1.0alpha` show up on your terminal when you type `docker image ls` (**NOTE** in the image below there are other containers that are not required, do not worry if you don't have those or slightly different values on the ID and the "CREATED" columns, the important bit is having `darribas/gdsr:1.0alpha` listed):
 
 ```{r fig6ii, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure8.png")
 ```
 <br>
 
-## Running Python {.unnumbered}
+## Running RStudio {.unnumbered}
 
 The following sections cover how to spin up a session you have just installed, use it, and shut it down when you are done.
 
 ### Running the container {.unlisted .unnumbered}
 
-1. In the new terminal line type the following command to run the container: `docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:5.0`
+1. In the new terminal line, type the following command to run the container: 
+
+`docker run -d -e PASSWORD=test123 -p 8787:8787 -v "${PWD}":/home/rstudio/work darribas/gdsr:1.0alpha`
 
 ```{r fig7, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure7.png")
@@ -112,30 +114,45 @@ knitr::include_graphics("figs/chp1/Figure7.png")
 
 <br>
 
-You have now started a Python session. 
+You have now started a RStudio session. 
 
 <div class="alert alert-info" style="font-size:120%">
 <b>IMPORTANT</b>: <br>
     
-Please do NOT close the terminal window until you are finished in this Python session
+Please do NOT close the terminal window until you are finished in this RStudio session
    
 </div>
 
-2. To access this session go to your chosen web browser (e.g. Safari/Chrome) and type: `localhost:8888` into the search bar
+2. The following window will appear (If this doesn't happen, go to 5):
+
+```{r fig10a, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp1/Figure10a.png")
+```
+
+3. Go to *`System Preferences'* > *`Security & Privacy'*. The following window will appear:
+
+```{r fig10b, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp1/Figure10b.png")
+```
+
+4. Enter your password.
+
+5. Now you can access the RStudio session. Go to your chosen web browser (e.g. Safari/Chrome) and type: `localhost:8787` into the search bar
 
 ```{r fig10, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure10_new.png")
+knitr::include_graphics("figs/chp1/Figure10.png")
 ```
 
-3. The page that loads will prompt you for a password or a token. This can be found in the text in the terminal following the last command you ran (step 9). A long series of numbers and letters will be preceded by `?token=`. Copy this long series of characters and paste into the password box in your browser.
 
-```{r fig9, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure9.png")
-```
+6. The page that loads will prompt you for a username and password as shown above. Type the following (as on the figure above):
+
+`username: rstudio` 
+
+`password: test123`
 
 <br>
 
-4. Now you are in Jupyter Lab you can open up a Python 3 notebook
+7. Now you are in RStudio Server, you can start coding or opening a new file. Please refer to [Rowe and Arribas-Bel (2021)](https://gdsl-ul.github.io/san/data-wrangling.html#introducing-r) for an introduction to the RStudio interface, R Script and R Notebook.
 
 ```{r fig11, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure11.png")
@@ -143,9 +160,11 @@ knitr::include_graphics("figs/chp1/Figure11.png")
 
 <br>
 
-### Using Jupyter Notebook {.unlisted .unnumbered}
+### Using a R Notebook {.unlisted .unnumbered}
 
-- This notebook is where you will run your code. Each shaded box is called a kernel. To test this out you can type `print('test')` into one of these kernels. To run the code use the shortcut `Ctrl + Enter`.
+- A R notebook is where you will run your code and can add text. The top header is called `YAML metadata` and each shaded box is called a kernel (or code chunk) contained within delimiters ` ```{r}` and ` ``` `.
+
+- Type `1 + 1` into a code chunk. To run the code click the play icon as indicated below. 
 
 ```{r fig12, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure12.png")
@@ -156,33 +175,33 @@ knitr::include_graphics("figs/chp1/Figure12.png")
 <div class="alert alert-info" style="font-size:120%">
 <b>IMPORTANT</b>: <br>
     
-Make sure you save files you want to keep **ONLY** _within_ the `work` folder, as this will ensure they are saved on your machine.
+Make sure you save your files by  you want to keep **ONLY** _within_ the `work` folder, as this will ensure they are saved on your machine.
     
 Everything saved outside the `work` folder will be _destroyed_ as soon as you shut down the session.
    
 </div>
 
 
-- You can access other files on your machine through the `work` folder in the File Browser. From here you can navigate to your Documents and designated folder for this module. 
+- You can access other files on your machine through the `work` folder in the Files Browser. From here you can navigate to your Documents and designated folder for this module. 
 
-```{r fig15a, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure15a_new.png")
+```{r fig11a, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp1/Figure11a.png")
 ```
 
-```{r fig15b, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure15b.png")
+```{r fig11b, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp1/Figure11b.png")
 ```
 
-```{r fig15c, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure15c.png")
+```{r fig11c, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp1/Figure11c.png")
 ```
 
 
-Here I am navigating to the GDS folder that I have created for this module in my Documents. You can replace this with the pathway to the folder you create for this module.
+Here I am navigating to the san folder that we have created for this module in my Downloads. You can replace this with the pathway to the folder you create for this module.
 
 <br>
 
-- You can save your notebook here using **File** > **Save notebook as**
+- You can save your notebook here using **File** > **Save As**
 ```{r fig13, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure13_new.png")
 ```
@@ -197,12 +216,18 @@ knitr::include_graphics("figs/chp1/Figure14_new.png")
 <br>
 
 ### Ending your session {.unlisted .unnumbered}
-Once you have finished in your Jupyter session and have saved all your work, you can end the session from the terminal.
+Once you have finished in your RStudio session and have saved all your work, you can end the session by closing your browser.
 
-Using `Ctrl + C` will prompt a `y/n` option. Either type `y` or `Ctrl + C` again to end the session. 
+1) Run `docker ps`:
 
 ```{r fig16, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure16.png")
+```
+
+2) Then, type `docker container stop` and copy the *CONTAINER ID* from the output above as shown here:
+
+```{r fig16a, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp1/Figure16a.png")
 ```
 
 <br>
@@ -211,4 +236,4 @@ You can now safely shut the terminal window.
 
 <br>
 
-Next time you go to run a Jupyter Notebook you will not need to repeat the whole process as you have already installed Docker and the GDS environment. Instead you can start from [Running the container] and carry on from there.
+Next time you go to run a R Notebook you will NOT need to repeat the whole process as you have already installed Docker and the RGDS environment. Instead you can start from [Running the container] and carry on from there.

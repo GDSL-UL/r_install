@@ -96,7 +96,7 @@ Please do NOT close the terminal window until you are finished in this Python se
 
 <br>
 
-<img src="figs/chp1/Figure10.png" width="568" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure10.png" width="1314" style="display: block; margin: auto;" />
 
 3. The page that loads will prompt you for a password or a token. This can be found in the text in the terminal following the last command you ran (step 9). A long series of numbers and letters will be preceded by `?token=`. Copy this long series of characters and paste into the password box in your browser.
 
@@ -105,7 +105,7 @@ Please do NOT close the terminal window until you are finished in this Python se
 
 4. Now you are in Jupyter Lab you can open up a Python 3 notebook
 
-<img src="figs/chp1/Figure11.png" width="692" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure11.png" width="1310" style="display: block; margin: auto;" />
 
 <br>
 
@@ -113,7 +113,7 @@ Please do NOT close the terminal window until you are finished in this Python se
 
 - This notebook is where you will run your code. Each shaded box is called a kernel. To test this out you can type `print('test')` into one of these kernels. To run the code use the shortcut `Ctrl + Enter`.
 
-<img src="figs/chp1/Figure12.png" width="693" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure12.png" width="1314" style="display: block; margin: auto;" />
 
 <br>
 

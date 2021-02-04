@@ -137,7 +137,7 @@ Please do NOT close the PowerShell window until you are finished in this Python 
 
 - This notebook is where you will run your code. Each shaded box is called a kernel. To test this out you can type `print('test')` into one of these kernels. To run the code use the shortcut `Ctrl + Enter`.
 
-<img src="figs/chp1/Figure12.png" width="693" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure12.png" width="1314" style="display: block; margin: auto;" />
 
 <br>
 
