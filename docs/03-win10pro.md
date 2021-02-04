@@ -192,6 +192,8 @@ Next time you go to run a Jupyter Notebook you will not need to repeat the whole
 
 ## Manual Installation {#winpro_manual_install .unnumbered}
 
+This module has been written using the most recent version of R, RStudio. To ensure... testing testing testing.
+
 ### Download and Install R  {.unlisted .unnumbered}
 
 #### Download R  {.unlisted .unnumbered}

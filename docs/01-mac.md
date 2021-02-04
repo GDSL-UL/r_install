@@ -1,6 +1,11 @@
 # MacOS Installation {#macos .unnumbered}
 
-**NOTE** This guide shows you how to install on MacOS via the `gds_env` [@gds_env]
+<div class="alert alert-danger" style="font-size:120%">
+<b>NOTE</b>: <br>
+
+This guide shows you how to install on MacOS via the `gds_env` [@gds_env]
+
+</div>
 
 ## Installation {.unnumbered}
 
@@ -18,7 +23,7 @@ To be able to complete this guide, your machine will need to meet the following 
 1. Go to the [dockerhub website](https://hub.docker.com/editions/community/docker-ce-desktop-mac/).
 2. Ensure you meet the criteria for download (it is the same as stated above) and then select 'Get Stable' button.
 
-<img src="figs/chp1/Figure1.png" width="660" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure1.png" width="1321" style="display: block; margin: auto;" />
 <br>
 
 3. This will then download to your machine but may take some time. Once finished, to access this download go to **Finder** > **Downloads** > **Docker.dmg** and double click.
@@ -52,7 +57,7 @@ Now we have Docker installed we can use it to access Python and all the associat
 2. In a fresh line in the terminal type the following to install the GDS environment container: 
 
 ```shell
-docker pull darribas/gds:5.0
+docker pull darribas/gdsr:1.0alpha
 ```
 
 <img src="figs/chp1/Figure5.png" width="286" style="display: block; margin: auto;" />

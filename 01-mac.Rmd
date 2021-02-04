@@ -1,6 +1,11 @@
 # MacOS Installation {#macos .unnumbered}
 
-> **NOTE** This guide shows you how to install on MacOS via the `gds_env` [@gds_env]
+<div class="alert alert-danger" style="font-size:120%">
+<b>NOTE</b>: <br>
+
+This guide shows you how to install on MacOS via the `gds_env` [@gds_env]
+
+</div>
 
 ## Installation {.unnumbered}
 
@@ -60,7 +65,7 @@ Now we have Docker installed we can use it to access Python and all the associat
 2. In a fresh line in the terminal type the following to install the GDS environment container: 
 
 ```shell
-docker pull darribas/gds:5.0
+docker pull darribas/gdsr:1.0alpha
 ```
 
 ```{r fig5, fig.align = 'center', echo = FALSE}

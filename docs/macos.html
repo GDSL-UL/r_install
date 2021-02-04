@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>MacOS Installation | R Installation Guide</title>
   <meta name="description" content="Installation Guide for R" />
-  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="MacOS Installation | R Installation Guide" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Francisco Rowe, Dani Arribas-Bel" />
 
 
-<meta name="date" content="2021-02-02" />
+<meta name="date" content="2021-02-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -99,16 +99,14 @@
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html"><i class="fa fa-check"></i>Windows 10 Pro/Education</a><ul>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_install"><i class="fa fa-check"></i>Installation</a><ul>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#requirements-2"><i class="fa fa-check"></i>Requirements</a></li>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_docker_install"><i class="fa fa-check"></i>Docker install steps</a></li>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_docker_gds"><i class="fa fa-check"></i>Installing the GDS container</a></li>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_success"><i class="fa fa-check"></i>Check success</a></li>
+<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_docker_install"><i class="fa fa-check"></i>Docker Installation</a><ul>
+<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#installing-docker"><i class="fa fa-check"></i>Installing Docker</a></li>
+<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_run"><i class="fa fa-check"></i>Running RStudio Server</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_run"><i class="fa fa-check"></i>Running Python</a><ul>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#running-the-container-2"><i class="fa fa-check"></i>Running the container</a></li>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#using-jupyter-notebook-2"><i class="fa fa-check"></i>Using Jupyter Notebook</a></li>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#ending-your-session-2"><i class="fa fa-check"></i>Ending your session</a></li>
+<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_manual_install"><i class="fa fa-check"></i>Manual Installation</a><ul>
+<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#download-and-install-r"><i class="fa fa-check"></i>Download and Install R</a></li>
+<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#download-and-install-rstudio"><i class="fa fa-check"></i>Download and Install RStudio</a></li>
+<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#open-rstudio"><i class="fa fa-check"></i>Open RStudio</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="otherWin.html"><a href="otherWin.html"><i class="fa fa-check"></i>Windows 10 Home/pre-10</a><ul>
@@ -149,7 +147,10 @@
             <section class="normal" id="section-">
 <div id="macos" class="section level1 unnumbered">
 <h1>MacOS Installation</h1>
-<p><strong>NOTE</strong> This guide shows you how to install on MacOS via the <code>gds_env</code> <span class="citation">(Arribas-Bel <a href="#ref-gds_env" role="doc-biblioref">2019</a>)</span></p>
+<div class="alert alert-danger" style="font-size:120%">
+<p><b>NOTE</b>: <br></p>
+<p>This guide shows you how to install on MacOS via the <code>gds_env</code> <span class="citation">(Arribas-Bel <a href="#ref-gds_env" role="doc-biblioref">2019</a>)</span></p>
+</div>
 <div id="installation" class="section level2 unnumbered">
 <h2>Installation</h2>
 <div id="requirements" class="section level3 unlisted unnumbered">
@@ -168,7 +169,7 @@
 <li>Go to the <a href="https://hub.docker.com/editions/community/docker-ce-desktop-mac/">dockerhub website</a>.</li>
 <li>Ensure you meet the criteria for download (it is the same as stated above) and then select ‘Get Stable’ button.</li>
 </ol>
-<p><img src="figs/chp1/Figure1.png" width="660" style="display: block; margin: auto;" />
+<p><img src="figs/chp1/Figure1.png" width="1321" style="display: block; margin: auto;" />
 <br></p>
 <ol start="3" style="list-style-type: decimal">
 <li>This will then download to your machine but may take some time. Once finished, to access this download go to <strong>Finder</strong> &gt; <strong>Downloads</strong> &gt; <strong>Docker.dmg</strong> and double click.</li>
@@ -198,7 +199,7 @@ You may get further windows asking for access to the program. To these you can c
 <li>Access your terminal: <strong>Launchpad</strong> &gt; <strong>Other</strong> &gt; <strong>Terminal</strong></li>
 <li>In a fresh line in the terminal type the following to install the GDS environment container:</li>
 </ol>
-<pre class="shell"><code>docker pull darribas/gds:5.0</code></pre>
+<pre class="shell"><code>docker pull darribas/gdsr:1.0alpha</code></pre>
 <p><img src="figs/chp1/Figure5.png" width="286" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <ol start="3" style="list-style-type: decimal">

@@ -1,7 +1,7 @@
 --- 
 title: "R Installation Guide"
 author: "Francisco Rowe, Dani Arribas-Bel"
-date: "2021-02-03"
+date: "2021-02-04"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
