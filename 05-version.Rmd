@@ -39,7 +39,7 @@ To check which architecture you have, follow these steps:
 1. Right click on the Windows logo in the left bottom corner of the task menu and select **System**
 
 ```{r arch1, fig.align = 'center', echo = FALSE}
-
+knitr::include_graphics("figs/chp5/Picture7.png")
 ```
 
 This will bring you to your system information page
@@ -47,7 +47,7 @@ This will bring you to your system information page
 2. The architecture of your computer can be found under the **System type** section (highlighted in red, for this example it is 64-bit):
 
 ```{r arch2, fig.align = 'center', echo = FALSE}
-
+knitr::include_graphics("figs/chp5/Picture8.png")
 ```
 
 Knowing which architecture your computer has allows you to download the right version of Miniconda, one of the [requirements](#otherwin_reqs) for successful installation.

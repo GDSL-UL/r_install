@@ -46,7 +46,7 @@ You can check the process has completed successfully by following these steps:
 
 1. Open PowerShell from the "Start Menu"
 
-```{r winpro_ps, fig.align = 'center', echo = FALSE}
+```{r winpro_ps, fig.align = 'center', echo = FALSE, out.width = "600px"}
 knitr::include_graphics("figs/chp3/InstallDocker2.png")
 ```
 <br>
@@ -58,7 +58,7 @@ docker --version
 ```
 Note: Don’t worry if you have you installed a slightly different version of Docker - that’s OK. What you want to make sure is that it successfully prints out a version instead of a warning/error message (usually in red).
 
-```{r winpro_dv, fig.align = 'center', echo = FALSE}
+```{r winpro_dv, fig.align = 'center', echo = FALSE, out.width = "600px"}
 knitr::include_graphics("figs/chp3/InstallDocker3.png")
 ```
 <br>
@@ -66,7 +66,7 @@ knitr::include_graphics("figs/chp3/InstallDocker3.png")
 
 ### Installing the container {#winpro_docker_gds .unlisted .unnumbered}
 
-Once you have Docker installed and running on your machine, installing everything you need to run Python and associated libraries boils down to the following two steps:
+Once you have Docker installed and running on your machine, installing everything you need to run RStudio and associated packages boils down to the following two steps:
 
 1. Open PowerShell following the same steps as above (you can use the same window as before or a fresh new one).
 2. Run (type and hit "Enter") the following command:
@@ -75,7 +75,7 @@ Once you have Docker installed and running on your machine, installing everythin
 docker pull darribas/gdsr:1.0alpha
 ```
 
-```{r winpro_pull, fig.align = 'center', echo = FALSE}
+```{r winpro_pull, fig.align = 'center', echo = FALSE, out.width = "600px"}
 knitr::include_graphics("figs/chp3/InstallDocker4.png")
 ```
 <br>
@@ -91,9 +91,9 @@ Make sure you are connected to the internet and it is a stable connection. This 
 
 ### Check success {#winpro_success .unlisted .unnumbered}
 
-If everything has gone according to plan, you should see `darribas/gds:5.0` show up on your terminal when you type `docker image ls`:
+If everything has gone according to plan, you should see `darribas/gdsr` show up on your terminal when you type `docker image ls`:
 
-```{r winpro_success, fig.align = 'center', echo = FALSE}
+```{r winpro_success, fig.align = 'center', echo = FALSE, out.width = "600px"}
 knitr::include_graphics("figs/chp3/InstallDocker5.png")
 ```
 <br>

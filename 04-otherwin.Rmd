@@ -1,16 +1,16 @@
 # Windows 10 Home/pre-10 {#otherWin .unnumbered}
 
-This guide covers the installation of Python on machines running Windows 10 Home Edition or versions of Windows prior to Windows 10 (e.g. Windows 7). With this approach, you will install Python "natively", that is running directly on your operating system.
+This guide covers the installation of R and RStudio on machines running Windows 10 Home Edition or versions of Windows prior to Windows 10 (e.g. Windows 7). With this approach, you will install R and RStudio "natively", that is running directly on your operating system. If you are not sure what version of Windows you are running, check out this [guide](#windows-version).
 
-<div class="alert alert-success" style="font-size:120%">
-<b>TIP</b>: <br>
+<div class="alert alert-danger" style="font-size:120%">
+<b>IMPORTANT</b>: <br>
     
-If you are unsure what version of Windows you are running, please check out [this guide](#windows-version) first.
-   
+This module has been written using the most up-to-date versions of R, RStudio and relevant packages. To avoid software compatibility issues it is important you have these same versions installed on your home computer.
+
+**Therefore, if you have R or RStudio already installed on your computer, please uninstall them before following the instructions below**
+    
 </div>
 
-
-This module has been written using the most recent version of R, RStudio. To ensure... testing testing testing.
 
 ## Download and Install R  {.unlisted .unnumbered}
 
@@ -188,7 +188,13 @@ knitr::include_graphics("figs/chp4/Studio_10.png")
 - Double click on Rstudio to open it. 
 
 <center>
-**CONGRATULATIONS YOU HAVE NOW SUCCESFULLY INSTALLED R and Rstudio**
+
+## Install Packages  {.unlisted .unnumbered}
+
+Section on how to install relevant packages for Windows.
+
+
+**CONGRATULATIONS YOU HAVE NOW SUCCESFULLY INSTALLED R, RStudio AND ALL THE PACKAGES YOU NEED TO COMPLETE THE COURSE.**
 
 **You can now start coding**
 
