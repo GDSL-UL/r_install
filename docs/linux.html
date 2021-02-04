@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Linux Installation | R Installation Guide</title>
   <meta name="description" content="Installation Guide for R" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Linux Installation | R Installation Guide" />
   <meta property="og:type" content="book" />
@@ -87,27 +87,27 @@
 </ul></li>
 <li class="chapter" data-level="" data-path="linux.html"><a href="linux.html"><i class="fa fa-check"></i>Linux Installation</a><ul>
 <li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#linux_install"><i class="fa fa-check"></i>Installation</a><ul>
-<li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#requirements-1"><i class="fa fa-check"></i>Requirements</a></li>
-<li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#docker-install-steps-1"><i class="fa fa-check"></i>Docker install steps</a></li>
+<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#requirements"><i class="fa fa-check"></i>Requirements</a></li>
+<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#docker-install-steps"><i class="fa fa-check"></i>Docker install steps</a></li>
 <li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#installing-the-gds-container"><i class="fa fa-check"></i>Installing the GDS container</a></li>
-<li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#check-success-1"><i class="fa fa-check"></i>Check success</a></li>
+<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#check-success"><i class="fa fa-check"></i>Check success</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#linux_run"><i class="fa fa-check"></i>Running Python</a><ul>
-<li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#running-the-container-1"><i class="fa fa-check"></i>Running the container</a></li>
+<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#running-the-container"><i class="fa fa-check"></i>Running the container</a></li>
 <li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#using-jupyter-notebook"><i class="fa fa-check"></i>Using Jupyter Notebook</a></li>
-<li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#ending-your-session-1"><i class="fa fa-check"></i>Ending your session</a></li>
+<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#ending-your-session"><i class="fa fa-check"></i>Ending your session</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html"><i class="fa fa-check"></i>Windows 10 Pro/Education</a><ul>
 <li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#installing-docker"><i class="fa fa-check"></i>Installing Docker</a><ul>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#requirements-2"><i class="fa fa-check"></i>Requirements</a></li>
+<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#requirements"><i class="fa fa-check"></i>Requirements</a></li>
 <li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_docker_install_steps"><i class="fa fa-check"></i>Docker install steps</a></li>
 <li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_docker_gds"><i class="fa fa-check"></i>Installing the container</a></li>
 <li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_success"><i class="fa fa-check"></i>Check success</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_run"><i class="fa fa-check"></i>Running RStudio Server</a><ul>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#running-the-container-2"><i class="fa fa-check"></i>Running the container</a></li>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#ending-your-session-2"><i class="fa fa-check"></i>Ending your session</a></li>
+<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#running-the-container"><i class="fa fa-check"></i>Running the container</a></li>
+<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#ending-your-session"><i class="fa fa-check"></i>Ending your session</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="otherWin.html"><a href="otherWin.html"><i class="fa fa-check"></i>Windows 10 Home/pre-10</a><ul>
@@ -153,7 +153,7 @@
 <p><strong>NOTE</strong> This guide shows you how to install on Linux via the <code>gds_env</code> <span class="citation">(Arribas-Bel <a href="#ref-gds_env" role="doc-biblioref">2019</a>)</span></p>
 <div id="linux_install" class="section level2 unnumbered">
 <h2>Installation</h2>
-<div id="requirements-1" class="section level3 unlisted unnumbered">
+<div id="requirements" class="section level3 unlisted unnumbered">
 <h3>Requirements</h3>
 <p>To be able to complete this guide, your machine will need to meet the following requirements:</p>
 <ol style="list-style-type: decimal">
@@ -163,7 +163,7 @@
 </ol>
 <p><strong>NOTE</strong> If you are running a different distribution (e.g. Arch Linux), there is a good chance Docker <em>will</em> work, but you will have to source your own instructions for installation. Once you have Docker up and running on your machine, you can move to <a href="linux.html#installing-the-gds-container">Installing the GDS container</a>.</p>
 </div>
-<div id="docker-install-steps-1" class="section level3 unlisted unnumbered">
+<div id="docker-install-steps" class="section level3 unlisted unnumbered">
 <h3>Docker install steps</h3>
 <ol style="list-style-type: decimal">
 <li>Select the page for your distribution from the <a href="https://hub.docker.com/search?q=&amp;type=edition&amp;offering=community&amp;operating_system=linux">Docker Hub list of supported distributions</a></li>
@@ -200,7 +200,7 @@
 <p>Make sure you are connected to the internet and it is a stable connection. This step involves the download of large amounts of data (ca. 10GB) so it might take a while. However, it only needs to be run once.</p>
 </div>
 </div>
-<div id="check-success-1" class="section level3 unlisted unnumbered">
+<div id="check-success" class="section level3 unlisted unnumbered">
 <h3>Check success</h3>
 <p>If everything has gone according to plan, you should see <code>darribas/gds:5.0</code> show up on your terminal when you type <code>docker image ls</code> (note in the image below there are other containers that are not required, do not worry if you don’t have those or slightly different values on the ID and the “CREATED” columns, the important bit is having <code>darribas/gds:5.0</code> listed):</p>
 <p><img src="figs/chp2/docker_image_ls.png" width="689" style="display: block; margin: auto;" />
@@ -210,7 +210,7 @@
 <div id="linux_run" class="section level2 unnumbered">
 <h2>Running Python</h2>
 <p>The following sections cover how to spin up the container you have just installed, use it, and shut it down when you are done.</p>
-<div id="running-the-container-1" class="section level3 unlisted unnumbered">
+<div id="running-the-container" class="section level3 unlisted unnumbered">
 <h3>Running the container</h3>
 <p>To start up Python through Docker, follow these steps:</p>
 <ol style="list-style-type: decimal">
@@ -269,7 +269,7 @@
 <p><img src="figs/chp1/Figure15c.png" width="538" style="display: block; margin: auto;" />
 <br></p>
 </div>
-<div id="ending-your-session-1" class="section level3 unlisted unnumbered">
+<div id="ending-your-session" class="section level3 unlisted unnumbered">
 <h3>Ending your session</h3>
 <p>Once you have finished in your Jupyter session and have saved all your work, you can end the session from the terminal.</p>
 <p>Using <code>Ctrl + C</code> will prompt a <code>y/n</code> option. Either type <code>y</code> or <code>Ctrl + C</code> again to end the session.</p>
