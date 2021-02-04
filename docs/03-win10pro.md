@@ -1,17 +1,14 @@
 # Windows 10 Pro/Education {#win10pro .unnumbered}
 
-This guide shows you how to install RStudio, with required packages, on Windows 10 Pro. 
+This guide shows you how to install Docker and run R/RStudio virtually using an environment we have created called `darribas/gdsr:1.0alpha` [@gds_env]. This approach is preferred for anyone using 'Windows 10 Pro/Education' because it avoids potential compatibility issues between the latest versions of R/RStudio and other software on your computer. 
 
-The best way to do this is by downloading Docker and running RStudio virtually using an environment we have created called `darribas/gdsr:1.0alpha` [@gds_env]. This approach is preferable because it sidesteps potential compatibility issues between RStudio and other software on your computer. 
+**Please therefore follow these steps even if R/RStudio is already installed on your computer.**
 
-**Please therefore follow the instructions in [Docker Installation](#winpro_docker_install), even if R/RStudio is already installed on your machine. If you run into problems, go to [Manual Installation](#winpro_manual_install) to install the most recent versions of each program.** 
+<br>
 
+## Installing Docker {.unlisted .unnumbered}
 
-## Docker Installation {#winpro_docker_install .unnumbered}
-
-### Installing Docker {.unlisted .unnumbered}
-
-#### Requirements {.unlisted .unnumbered}
+### Requirements {.unlisted .unnumbered}
 
 To be able to complete this guide, your machine will need to meet the following requirements:
 
@@ -28,7 +25,7 @@ If you know you don't have Windows 10 Pro, for example you are running Windows 1
     
 </div>
  
-#### Docker install steps {#winpro_docker_install_steps .unlisted .unnumbered}
+### Docker install steps {#winpro_docker_install_steps .unlisted .unnumbered}
 
 Once you have everything required ready to go, the first step is to install the Docker Desktop App for Windows. Here are the steps you can follow:
 
@@ -61,7 +58,7 @@ docker --version
 
 Note that you might have installed a slightly different version and that is totally OK. What you want to make sure is that it successfully prints out a version instead of a warning/error message (usually in red).
 
-#### Installing the container {#winpro_docker_gds .unlisted .unnumbered}
+### Installing the container {#winpro_docker_gds .unlisted .unnumbered}
 
 Once you have Docker installed and running on your machine, installing everything you need to run Python and associated libraries boils down to the following two steps:
 
@@ -84,18 +81,18 @@ Make sure you are connected to the internet and it is a stable connection. This 
    
 </div>
 
-#### Check success {#winpro_success .unlisted .unnumbered}
+### Check success {#winpro_success .unlisted .unnumbered}
 
 If everything has gone according to plan, you should see `darribas/gds:5.0` show up on your terminal when you type `docker image ls` (note in the image below there are other containers that are not required, do not worry if you don't have those or slightly different values on the ID and the "CREATED" columns, the important bit is having `darribas/gds:5.0` listed):
 
 <img src="figs/chp3/docker_success.png" width="614" style="display: block; margin: auto;" />
 <br>
 
-### Running RStudio Server {#winpro_run .unnumbered}
+## Running RStudio Server {#winpro_run .unnumbered}
 
 The following sections cover how to start up the software you have just installed, use it, and shut it down when you are done.
 
-#### Running the container {.unlisted .unnumbered}
+### Running the container {.unlisted .unnumbered}
 
 To start up Python through Docker, follow these steps:
 
@@ -172,7 +169,7 @@ Everything saved outside the `work` folder will be _destroyed_ as soon as you sh
 <img src="figs/chp1/Figure15c.png" width="538" style="display: block; margin: auto;" />
 <br>
 
-#### Ending your session {.unlisted .unnumbered}
+### Ending your session {.unlisted .unnumbered}
 
 Once you have finished in your Jupyter session and have saved all your work, you can end the session from the terminal.
 
@@ -187,146 +184,3 @@ You can now safely shut the terminal window.
 <br>
 
 Next time you go to run a Jupyter Notebook you will not need to repeat the whole process as you have already installed Docker and the GDS environment. Instead you can start from [Running Python through Docker](#winpro_run) and carry on from there.
-
-<br>
-
-## Manual Installation {#winpro_manual_install .unnumbered}
-
-This module has been written using the most recent version of R, RStudio. To ensure... testing testing testing.
-
-### Download and Install R  {.unlisted .unnumbered}
-
-#### Download R  {.unlisted .unnumbered}
-
-R is the coding software that will execute the code you write in RStudio
-
-**NOTE: You need to install R before you install RStudio**
-
-
-<img src="figs/chp3/Picture_1.png" width="825" style="display: block; margin: auto;" />
-
--  Open the [R download page](https://cran.rstudio.com/) in your browser and click on **Download R for Windows**.  
-
-<img src="figs/chp3/Picture_2.png" width="962" style="display: block; margin: auto;" />
-
--  Click on **base** (highlighted in red here) as you are installing R for the first time. 
-
-<img src="figs/chp3/Picture_3.png" width="825" style="display: block; margin: auto;" />
-
--  Click on **Download R 4.0.3 for Windows** (highlighted in red here) to start the download. 
-
-#### Install R {.unlisted .unnumbered}
-
-<img src="figs/chp3/Picture_4.png" width="784" style="display: block; margin: auto;" />
-
--	Navigate to your **Downloads** folder and double click on the **_R-4.0.3-win_** file.
-
-**NOTE: Once you double click on the file, a window might pop up that asks you if you want to allow this app to make changes to your device click _YES_ to continue the installation**
-
-<img src="figs/chp3/R_1.png" width="350px" style="display: block; margin: auto;" />
-
--	A new window will pop up asking you to select a language for the installation. Select **English** and click **_OK_**.
-
-<img src="figs/chp3/R_2.png" width="600px" style="display: block; margin: auto;" />
-
--	The next window shows the Terms and Conditions. Click **_Next_** to continue with the installation. 
-
-<img src="figs/chp3/R_3.png" width="600px" style="display: block; margin: auto;" />
-
--	The next window will ask you to specify where you would like to install R. Leave the default settings and click **_Next_**. 
-
-<img src="figs/chp3/R_4.png" width="600px" style="display: block; margin: auto;" />
-
--	The next window will ask you what components of R you want to install. Leave the default settings (all boxes ticked) and click **_Next_**. 
-
-
-<img src="figs/chp3/R_5.png" width="600px" style="display: block; margin: auto;" />
-
--	The next window will ask you if you want to customise the startup options.
-- Select **No** and click **_Next_**.  
-
-<img src="figs/chp3/R_6.png" width="600px" style="display: block; margin: auto;" />
-
--	The next window will ask you to select/name a start menu folder.
-- Leave the default settings (R) and click **_Next_**.  
-
-<img src="figs/chp3/R_7.png" width="600px" style="display: block; margin: auto;" />
-
--	The next window will ask you to select additional task that will be performed while installing R.
-- Leave the default (Additional shortcuts unticked,Registry entries ticked) and click **_Next_** .
-
-<img src="figs/chp3/R_8.png" width="600px" style="display: block; margin: auto;" />
-
--	R will now install.
-
-<img src="figs/chp3/R_9.png" width="600px" style="display: block; margin: auto;" />
-
--	Once the installation is complete, click **_Finish_**. 
-
-
-
-
-### Download and Install RStudio  {.unlisted .unnumbered}
-
-#### Download RStudio  {.unlisted .unnumbered}
-
-R-Studio is the R user interface in which you can code. 
-
-<img src="figs/chp3/Studio_1.png" width="962" style="display: block; margin: auto;" />
-
-- Go to the [R-studio download page](https://rstudio.com/products/rstudio/download/).
-
-<img src="figs/chp3/Studio_2.png" width="973" style="display: block; margin: auto;" />
-
-- On the download page, scroll down and click on the **_Download_** button under **RStudio Desktop**. 
-
-
-<img src="figs/chp3/Studio_3.png" width="960" style="display: block; margin: auto;" />
-
-- Click on **Download RStudio for Windows** to download the installation file 
-
-#### Install RStudio  {.unlisted .unnumbered}
-
-<img src="figs/chp3/Studio_4.png" width="825" style="display: block; margin: auto;" />
-
--	Navigate to your **Downloads** folder and double click on the **RStudio-1.4.1103** file.  
-**NOTE: Once you double click on the file, a window might pop up that asks you if you want to allow this app to make changes to your device click _YES_ to continue the installation**
-
-<img src="figs/chp3/Studio_5.png" width="600px" style="display: block; margin: auto;" />
-
--	In the installation window that opens, click **_Next_**.
-
-<img src="figs/chp3/Studio_6.png" width="600px" style="display: block; margin: auto;" />
-
-- In the next window, you can specify where you want to install RStudio.
-- Leave the default settings and click **_Next_**. 
-
-
-<img src="figs/chp3/Studio_7.png" width="600px" style="display: block; margin: auto;" />
-
--	The next window will ask you to choose a Start Menu Folder.
-- Leave the default settings (RStudio) and click **_Next_**.
-
-
-<img src="figs/chp3/Studio_8.png" width="600px" style="display: block; margin: auto;" />
-
--	RStudio is now installing. 
-
-
-<img src="figs/chp3/Studio_9.png" width="600px" style="display: block; margin: auto;" />
-
--	Once the intallation is completed, click on **_Finish_**.
-
-### Open RStudio  {.unlisted .unnumbered}
-<img src="figs/chp3/Studio_10.png" width="962" style="display: block; margin: auto;" />
-
-- To open RStudio, click on the Windows logo in the left bottom corner of your screen and either type **_RStudio_** or look for the **RStudio folder** in the menu. 
-- Double click on Rstudio to open it. 
-
-<center>
-**CONGRATULATIONS YOU HAVE NOW SUCCESFULLY INSTALLED R and Rstudio**
-
-**You can now start coding**
-
-
-![](https://media.giphy.com/media/PiQejEf31116URju4V/giphy.gif)

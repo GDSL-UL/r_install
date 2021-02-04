@@ -9,232 +9,144 @@ If you are unsure what version of Windows you are running, please check out [thi
    
 </div>
 
-## Installation {#otherWin_install .unnumbered}
 
-This process involves a few steps:
+This module has been written using the most recent version of R, RStudio. To ensure... testing testing testing.
 
-1. [Requirements](#otherwin_reqs): gather everything you will need before getting started
-1. [Miniconda Install](miniconda_install): install the programme that will allow you to install Python
-1. [GDS Environment](#otherWin_gds): turbo charge your Python installation
-1. [Extra addon's](#otherWin_addons): put the final touches on the install
-1. [Success check](#otherWin_check): certify everything went smoothly
+## Download and Install R  {.unlisted .unnumbered}
 
-Make sure you complete each of them successfully before moving on to the next one.
+### Download R  {.unlisted .unnumbered}
 
-### Requirements {#otherwin_reqs .unlisted .unnumbered}
+R is the coding software that will execute the code you write in RStudio
 
-To complete this installation route successfully, you will need the following:
+**NOTE: You need to install R before you install RStudio**
 
-- A good internet connection
-- The `gds_py.yml` file that you can download on [this link](https://github.com/darribas/gds_env/raw/master/gds_py/gds_py.yml). Right click and "Save Link As" to download it to your computer, as illustrated in the blue box below.
-- The `jl_setup.bat` file that you can download on [this link](jl_setup.bat). Right click and "Save Link As" to download it to your computer, as illustrated in the blue box below.
 
-<div class="alert alert-info" style="font-size:120%">
-<b>TIP</b>: <br>
-    
-To download these files, follow these steps with each: 
-    
-1. Right-click on the link to each file and select "Save link as"
-    
-<img src="figs/chp4/download_file.png" width="570" style="display: block; margin: auto;" />
-    
-2. This will prompt a window as below. Select a destination to download it to (the Desktop, for example) and hit "Save"
-    
-<img src="figs/chp4/save_file.png" width="710" style="display: block; margin: auto;" />
-    
-</div>
+<img src="figs/chp4/Picture_1.png" width="825" style="display: block; margin: auto;" />
 
-- A copy of Miniconda for Windows and Python 3.8. Make sure you check [which architecture of Windows you are running](#windows-arch) before proceeding.
+-  Open the [R download page](https://cran.rstudio.com/) in your browser and click on **Download R for Windows**.  
 
-<div class="alert alert-info" style="font-size:120%">
-<b>TIP</b>: <br>
+<img src="figs/chp4/Picture_2.png" width="962" style="display: block; margin: auto;" />
 
-To download Miniconda, follow these steps:
-    
-1. Head over to the [Download Page](https://docs.conda.io/en/latest/miniconda.html#windows-installers) and select Python 3.8:
-    
-<img src="figs/chp4/Picture10.png" width="1075" style="display: block; margin: auto;" />
+-  Click on **base** (highlighted in red here) as you are installing R for the first time. 
 
-2. We are using **Python 3.8**, so depending on which windows version you are using (32-bit or 64-bit), click on the relevant file in the Python 3.8 section (highlighted in red). 
-3. This will download the Miniconda installation file. Depending on your setup and browser, you will need to select where to place it (the Desktop folder would be a good option) or it will go straight into a default location (e.g. the Downloads folder)
-    
-</div>
+<img src="figs/chp4/Picture_3.png" width="825" style="display: block; margin: auto;" />
 
-For the sake of this guide, we will assume you download the two files (`gds_py.yml` and `jl_setup.bat`) and the Miniconda installer on the Desktop folder (`C:\Users\username\Desktop`). You do not need to choose this folder but, if you use a different one, please adjust all instructions below accordingly.
+-  Click on **Download R 4.0.3 for Windows** (highlighted in red here) to start the download. 
 
+### Install R {.unlisted .unnumbered}
 
-### Minicoda Install {#miniconda_install .unlisted .unnumbered}
+<img src="figs/chp4/Picture_4.png" width="784" style="display: block; margin: auto;" />
 
-The next step is to install the copy of Miniconda we just downloaded. To do that, follow these steps:
+-	Navigate to your **Downloads** folder and double click on the **_R-4.0.3-win_** file.
 
-1. Head over to the folder where you downloaded it (the Desktop in our case)
-2. Double click the downloaded file will open an installation window:
+**NOTE: Once you double click on the file, a window might pop up that asks you if you want to allow this app to make changes to your device click _YES_ to continue the installation**
 
-<img src="figs/chp4/inst_1.PNG" width="260" style="display: block; margin: auto;" />
+<img src="figs/chp4/R_1.png" width="350px" style="display: block; margin: auto;" />
 
-3. Click **_Next_** on the first step. 
-4. Click **_I Agree_** to the Terms and Conditions:
+-	A new window will pop up asking you to select a language for the installation. Select **English** and click **_OK_**.
 
-<img src="figs/chp4/inst_2.PNG" width="260" style="display: block; margin: auto;" />
-5. In the next window, we will select "Just Me" so no administrator rights are required:
+<img src="figs/chp4/R_2.png" width="600px" style="display: block; margin: auto;" />
 
-<img src="figs/chp4/inst_3.PNG" width="258" style="display: block; margin: auto;" />
+-	The next window shows the Terms and Conditions. Click **_Next_** to continue with the installation. 
 
-6. The next window will ask you where to install Miniconda. Unless you know what you are doing, leave the path (highlighted in blue) as is and click next: 
+<img src="figs/chp4/R_3.png" width="600px" style="display: block; margin: auto;" />
 
-<img src="figs/chp4/inst_4.PNG" width="258" style="display: block; margin: auto;" />
+-	The next window will ask you to specify where you would like to install R. Leave the default settings and click **_Next_**. 
 
-7. The next window can be used for an advanced setup. Unless you know what you are doing, leave the default settings as they are (ie. box ticked at _Register Miniconda3 as my default Python 3.8_).
+<img src="figs/chp4/R_4.png" width="600px" style="display: block; margin: auto;" />
 
-<img src="figs/chp4/inst_5.PNG" width="258" style="display: block; margin: auto;" />
+-	The next window will ask you what components of R you want to install. Leave the default settings (all boxes ticked) and click **_Next_**. 
 
-7. Click **_Install_** and the installation process will begin:
 
-<img src="figs/chp4/inst_6.PNG" width="258" style="display: block; margin: auto;" />
+<img src="figs/chp4/R_5.png" width="600px" style="display: block; margin: auto;" />
 
-8. Once the installation is complete, click **_Next_**.
-9. Untick all boxes in the window (unless you want further information on Miniconda, which will open in your browser) and click **_Finish_**:
+-	The next window will ask you if you want to customise the startup options.
+- Select **No** and click **_Next_**.  
 
-<img src="figs/chp4/inst_7.PNG" width="258" style="display: block; margin: auto;" />
+<img src="figs/chp4/R_6.png" width="600px" style="display: block; margin: auto;" />
 
-### Install GDS Environment {#otherWin_gds .unlisted .unnumbered}
+-	The next window will ask you to select/name a start menu folder.
+- Leave the default settings (R) and click **_Next_**.  
 
-Once we have Miniconda ready to go, the next step is to install what we will call the GDS environment. This is a set of software packages that will allow us to do very cool stuff with Python and geographic data. This is the step that will install _most_ of what you will need and hence also the longest one. Let's get started!
+<img src="figs/chp4/R_7.png" width="600px" style="display: block; margin: auto;" />
 
-1. Head to the Windows icon on the bottom left of your screen and type **_Anaconda_**:
+-	The next window will ask you to select additional task that will be performed while installing R.
+- Leave the default (Additional shortcuts unticked,Registry entries ticked) and click **_Next_** .
 
-<img src="figs/chp4/Picture20.png" width="1075" style="display: block; margin: auto;" />
+<img src="figs/chp4/R_8.png" width="600px" style="display: block; margin: auto;" />
 
-2. Now click on **_Anaconda Prompt (miniconda3)_** (from now on we will refer to this as the **Anaconda Prompt**)
+-	R will now install.
 
-<img src="figs/chp4/Picture21.png" width="1074" style="display: block; margin: auto;" />
+<img src="figs/chp4/R_9.png" width="600px" style="display: block; margin: auto;" />
 
-3. This will launch a window that looks, more or less, like this:
+-	Once the installation is complete, click **_Finish_**. 
 
-<img src="figs/chp4/Conda_1.PNG" width="491" style="display: block; margin: auto;" />
 
-4. Now we need to "navigate" to the folder where you placed the files downloaded above (`gds_py.yml` and `jl_setup.bat`). In this illustration, we are using the Desktop folder, so you can run the following command:
 
-```shell
-cd Desktop
-```
 
-Note that you can move to a given folder by using the command `cd myFolder` to move forward through folders, and `cd ..` to move backwards. Once you have typed the command, press _Enter_.
+## Download and Install RStudio  {.unlisted .unnumbered}
 
-5. Once you have navigated to the location of your files (e.g. _Desktop_), run the following command in the Anaconda Prompt, and press enter to execute it: 
+### Download RStudio  {.unlisted .unnumbered}
 
-```shell
-conda-env create -f gds_py.yml
-```
+R-Studio is the R user interface in which you can code. 
 
-<img src="figs/chp4/Conda_4.PNG" width="490" style="display: block; margin: auto;" />
+<img src="figs/chp4/Studio_1.png" width="962" style="display: block; margin: auto;" />
 
-<div class="alert alert-info" style="font-size:120%">
-<b>TIP</b>: <br>
+- Go to the [R-studio download page](https://rstudio.com/products/rstudio/download/).
 
-This step requires that `gds_py.yml` exists in the folder where you have directed the Anaconda Prompt (e.g. `C:\Users\username\Downloads`) and will take a while, depending on the speed of your connection but no less than 15-20 minutes. Grab a *cuppa* and be patient!
-</div>
+<img src="figs/chp4/Studio_2.png" width="973" style="display: block; margin: auto;" />
 
+- On the download page, scroll down and click on the **_Download_** button under **RStudio Desktop**. 
 
 
-6. If everything has gone according to plan, your Anaconda Prompt should look a bit like this:
+<img src="figs/chp4/Studio_3.png" width="960" style="display: block; margin: auto;" />
 
-<img src="figs/chp4/Conda_7.PNG" width="490" style="display: block; margin: auto;" />
+- Click on **Download RStudio for Windows** to download the installation file 
 
-This has created correctly the `gds` environment, congratulations! We are _almost_ there.
+### Install RStudio  {.unlisted .unnumbered}
 
-7. Now we need to _activate_ the environment. For this, run the following command:
+<img src="figs/chp4/Studio_4.png" width="825" style="display: block; margin: auto;" />
 
-```shell
-conda activate gds
-```
+-	Navigate to your **Downloads** folder and double click on the **RStudio-1.4.1103** file.  
+**NOTE: Once you double click on the file, a window might pop up that asks you if you want to allow this app to make changes to your device click _YES_ to continue the installation**
 
-### Complete environment Setup {#otherWin_addons .unlisted .unnumbered}
+<img src="figs/chp4/Studio_5.png" width="600px" style="display: block; margin: auto;" />
 
-The final step involves installing a few addon's that will make interacting with data a lot smoother and fun. Let's get to it!
+-	In the installation window that opens, click **_Next_**.
 
-1. Ensure you have the `gds` environment activated. You will be able to check this by looking at the name that appears in parenthesis in the beginning of the last line of the Anaconda Prompt. If yours reads `base`, activate the `gds` environment by running:
+<img src="figs/chp4/Studio_6.png" width="600px" style="display: block; margin: auto;" />
 
-```shell
-conda activate gds
-```
+- In the next window, you can specify where you want to install RStudio.
+- Leave the default settings and click **_Next_**. 
 
-You can see that the start of the line has changed from **(base)** to **(gds)**.
 
-2. On this very Anaconda Prompt window, let's run the `jl_setup.bat` script. For this type the following:
+<img src="figs/chp4/Studio_7.png" width="600px" style="display: block; margin: auto;" />
 
-```shell
-jl_setup.bat
-```
+-	The next window will ask you to choose a Start Menu Folder.
+- Leave the default settings (RStudio) and click **_Next_**.
 
-And hit enter. Your Anaconda Prompt should display a series of commands that looks, more or less, as follows:
- 
-<img src="figs/chp4/Conda_9.PNG" width="490" style="display: block; margin: auto;" />
 
-<div class="alert alert-info" style="font-size:120%">
-<b>TIP</b>: <br>
+<img src="figs/chp4/Studio_8.png" width="600px" style="display: block; margin: auto;" />
 
-This step requires that `jl_setup.bat` exists in the same folder `C:\Users\username\Downloads` and will also take a while, depending on the speed of your connection but no less than 10-15 minutes. Be patient, we're almost there!
+-	RStudio is now installing. 
 
-</div>
 
-When this completes, you are all set to go, congratulations!!!
+<img src="figs/chp4/Studio_9.png" width="600px" style="display: block; margin: auto;" />
 
-**NOTE:** Do not close the Anaconda prompt yet as we will need it again in the next section, to check everything is alright. 
+-	Once the intallation is completed, click on **_Finish_**.
 
-### Check Installation {#otherWin_check .unlisted .unnumbered}
+## Open RStudio  {.unlisted .unnumbered}
+<img src="figs/chp4/Studio_10.png" width="962" style="display: block; margin: auto;" />
 
-To make sure that your installation was successful and all packages have been installed we need to run one more thing. Here're the steps to follow:
-
-1. Download the [**check_py_stack.ipynb**](https://raw.githubusercontent.com/darribas/gds_env/master/gds_py/check_py_stack.ipynb) file by right clicking on it and selecting **_Save link as_**. Make sure to use the same folder we have been using so far.
-2. From the same Anaconda Prompt as above, with the environment activated (you'll know that is the case if `(gds)` is at the top of the line in the command prompt), run:
-
-```shell
-jupyter nbconvert --to html --execute check_py_stack.ipynb
-```
-
-This will take a little bit and, if it succeeds, it will produce a file called `check_py_stack.html` that you can open in your browser to inspect. If there are no errors and every cell has been run correctly, your resulting file should look like [this one](check_py_stack.html). If the two look the same, you are all set!!!
-
-## Running Python {#otherWin_run .unnumbered}
-
-Now that you have successfully installed Python on your computer, you are ready to go! Now every time you want to launch the app, called Jupyter Lab, you will need to follow these steps:
-
-1. Start by opening an Anaconda Prompt (remember: "Start Menu" --> "Anaconda Prompt (miniconda3)").
-2. Navigate to the folder that you want to work in using the `cd` command (for example, your home directory: `C:\Users\username`). 
-3. Activate the GDS environment by running:
-
-```shell
-conda activate gds
-```
-
-4. Launch Jupyter lab by running the following command:
-
-```shell
-jupyter lab
-```
-
-This will launch Jupyter Lab in your default browser.
-
-<div class="alert alert-info" style="font-size:120%">
-<b>TIP</b>: <br>
-
-It is recommended to use Firefox or Chrome. 
-    
-If your default browser is neither of the recommended, you can:
-    
-1. Close the window that opens automatically
-2. Open Firefox/Chrome and paste the URL from the Anaconda Prompt:
-
-<img src="figs/chp4/Conda_13.PNG" width="489" style="display: block; margin: auto;" />
-
-</div>
-
-You should now be looking at an interface that looks very similar to this:
-
-<img src="figs/chp4/jupyter_lab.png" width="870" style="display: block; margin: auto;" />
-
-If that is the case, CONGRATULATIONS!!! You are ready to go and start hacking away!!!
+- To open RStudio, click on the Windows logo in the left bottom corner of your screen and either type **_RStudio_** or look for the **RStudio folder** in the menu. 
+- Double click on Rstudio to open it. 
 
 <center>
+**CONGRATULATIONS YOU HAVE NOW SUCCESFULLY INSTALLED R and Rstudio**
+
+**You can now start coding**
+
+
 ![](https://media.giphy.com/media/PiQejEf31116URju4V/giphy.gif)
-<center>
+
+
