@@ -23,33 +23,25 @@ To be able to complete this guide, your machine will need to meet the following 
 1. Go to the [dockerhub website](https://hub.docker.com/editions/community/docker-ce-desktop-mac/).
 2. Ensure you meet the criteria for download (it is the same as stated above) and then select 'Get Docker' button.
 
-```{r fig1, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure1.png")
-```
+<img src="figs/chp1/Figure1.png" width="1321" style="display: block; margin: auto;" />
 <br>
 
 3. This will then download to your machine but may take some time. Once finished, to access this download go to **Finder** > **Downloads** > **Docker.dmg** and double click.
 
-```{r fig2, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure2.png")
-```
+<img src="figs/chp1/Figure2.png" width="502" style="display: block; margin: auto;" />
 
 <br>
 
 4. You should then be prompted to drag and drop this application into the applications folder like so:
 
-```{r fig3, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure3.png")
-```
+<img src="figs/chp1/Figure3.png" width="360" style="display: block; margin: auto;" />
 You may get further windows asking for access to the program. To these you can click **Open** > **OK** > enter your account password and click **Install helper**
 
 <br>
 
 
 5. After you have done this, the whale icon should now show in your taskbar:
-```{r fig4, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure4.png")
-```
+<img src="figs/chp1/Figure4.png" width="407" style="display: block; margin: auto;" />
 
 <br>
 
@@ -68,16 +60,12 @@ Now we have Docker installed we can use it to access Python and all the associat
 docker pull darribas/gdsr:1.0alpha
 ```
 
-```{r fig5, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure5.png")
-```
+<img src="figs/chp1/Figure5.png" width="716" style="display: block; margin: auto;" />
 
 <br>
 
 3. This should now prompt a long download process that looks a bit like this:
-```{r fig6, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure6.png")
-```
+<img src="figs/chp1/Figure6.png" width="286" style="display: block; margin: auto;" />
 Don't be alarmed if it seems to take a very long time.
 
 <div class="alert alert-info" style="font-size:120%">
@@ -93,9 +81,7 @@ You will know the process has completed successfully when each line says *'Pull 
 
 If everything has gone according to plan, you should see `darribas/gdsr:1.0alpha` show up on your terminal when you type `docker image ls` (**NOTE** in the image below there are other containers that are not required, do not worry if you don't have those or slightly different values on the ID and the "CREATED" columns, the important bit is having `darribas/gdsr:1.0alpha` listed):
 
-```{r fig6ii, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure8.png")
-```
+<img src="figs/chp1/Figure8.png" width="716" style="display: block; margin: auto;" />
 <br>
 
 ## Running RStudio {.unnumbered}
@@ -108,9 +94,7 @@ The following sections cover how to spin up a session you have just installed, u
 
 `docker run -d -e PASSWORD=test123 -p 8787:8787 -v "${PWD}":/home/rstudio/work darribas/gdsr:1.0alpha`
 
-```{r fig7, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure7.png")
-```
+<img src="figs/chp1/Figure7.png" width="1017" style="display: block; margin: auto;" />
 
 <br>
 
@@ -125,23 +109,17 @@ Please do NOT close the terminal window until you are finished in this RStudio s
 
 2. The following window will appear (If this doesn't happen, go to 5):
 
-```{r fig10a, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure10a.png")
-```
+<img src="figs/chp1/Figure10a.png" width="425" style="display: block; margin: auto;" />
 
 3. Go to *`System Preferences'* > *`Security & Privacy'*. The following window will appear:
 
-```{r fig10b, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure10b.png")
-```
+<img src="figs/chp1/Figure10b.png" width="668" style="display: block; margin: auto;" />
 
 4. Enter your password.
 
 5. Now you can access the RStudio session. Go to your chosen web browser (e.g. Safari/Chrome) and type: `localhost:8787` into the search bar
 
-```{r fig10, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure10.png")
-```
+<img src="figs/chp1/Figure10.png" width="1314" style="display: block; margin: auto;" />
 
 
 6. The page that loads will prompt you for a username and password as shown above. Type the following (as on the figure above):
@@ -154,9 +132,7 @@ knitr::include_graphics("figs/chp1/Figure10.png")
 
 7. Now you are in RStudio Server, you can start coding or opening a new file. Please refer to [Rowe and Arribas-Bel (2021)](https://gdsl-ul.github.io/san/data-wrangling.html#introducing-r) for an introduction to the RStudio interface, R Script and R Notebook.
 
-```{r fig11, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure11.png")
-```
+<img src="figs/chp1/Figure11.png" width="1310" style="display: block; margin: auto;" />
 
 <br>
 
@@ -166,9 +142,7 @@ knitr::include_graphics("figs/chp1/Figure11.png")
 
 - Type `1 + 1` into a code chunk. To run the code click the play icon as indicated below. 
 
-```{r fig12, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure12.png")
-```
+<img src="figs/chp1/Figure12.png" width="1314" style="display: block; margin: auto;" />
 
 <br>
 
@@ -184,17 +158,11 @@ Everything saved outside the `work` folder will be _destroyed_ as soon as you sh
 
 - You can access other files on your machine through the `work` folder in the Files Browser. From here you can navigate to your Documents and designated folder for this module. 
 
-```{r fig11a, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure11a.png")
-```
+<img src="figs/chp1/Figure11a.png" width="1310" style="display: block; margin: auto;" />
 
-```{r fig11b, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure11b.png")
-```
+<img src="figs/chp1/Figure11b.png" width="1310" style="display: block; margin: auto;" />
 
-```{r fig11c, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure11c.png")
-```
+<img src="figs/chp1/Figure11c.png" width="1310" style="display: block; margin: auto;" />
 
 
 Here I am navigating to the san folder that we have created for this module in my Downloads. You can replace this with the pathway to the folder you create for this module.
@@ -202,16 +170,12 @@ Here I am navigating to the san folder that we have created for this module in m
 <br>
 
 - You can save your notebook here using **File** > **Save As**
-```{r fig13, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure13_new.png")
-```
+<img src="figs/chp1/Figure13_new.png" width="530" style="display: block; margin: auto;" />
 
 <br>
 
 - And you can create new folders to organise your work
-```{r fig14, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure14_new.png")
-```
+<img src="figs/chp1/Figure14_new.png" width="910" style="display: block; margin: auto;" />
 
 <br>
 
@@ -220,15 +184,11 @@ Once you have finished in your RStudio session and have saved all your work, you
 
 1) Run `docker ps`:
 
-```{r fig16, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure16.png")
-```
+<img src="figs/chp1/Figure16.png" width="887" style="display: block; margin: auto;" />
 
 2) Then, type `docker container stop` and copy the *CONTAINER ID* from the output above as shown here:
 
-```{r fig16a, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure16a.png")
-```
+<img src="figs/chp1/Figure16a.png" width="887" style="display: block; margin: auto;" />
 
 <br>
 
