@@ -115,7 +115,7 @@ Please do NOT close the terminal window until you are finished in this RStudio s
 
 <img src="figs/chp1/Figure10b.png" width="668" style="display: block; margin: auto;" />
 
-4. Enter your password.
+4. Click the lock (shown above) and enter your password.
 
 5. Now you can access the RStudio session. Go to your chosen web browser (e.g. Safari/Chrome) and type: `localhost:8787` into the search bar
 
