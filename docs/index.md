@@ -18,7 +18,7 @@ This resource provides step-by-step descriptions on how to install and run RStud
 
 Select your Operating System and follow the steps.
 
-<img src="figs/intro/tree.jpeg" style="display: block; margin: auto;" />
+<img src="figs/intro/tree.jpeg" width="647" style="display: block; margin: auto;" />
 
 
 <mark> **A1** [MacOS Installation](#macos) </mark>

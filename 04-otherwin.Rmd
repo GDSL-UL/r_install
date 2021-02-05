@@ -16,7 +16,7 @@ This module has been written using the most up-to-date versions of R, RStudio an
 
 ### Download R  {.unlisted .unnumbered}
 
-R is the coding software that will execute the code you write in RStudio
+R is the coding software that will execute the code you write in RStudio.
 
 **NOTE: You need to install R before you install RStudio**
 
@@ -191,13 +191,79 @@ knitr::include_graphics("figs/chp4/Studio_10.png")
 
 ## Install Packages  {.unlisted .unnumbered}
 
-[Test link](deps/rgds_deps.R)
+In order to complete the course, you will need to have installed all the required packages. The simplest way to do this is to run the below code in RStudio.
 
+```{r, eval=FALSE}
+list.of.packages.cran <- c(
+  "arm", "car", "corrplot", "FRK", "gghighlight",
+  "ggplot2", "ggmap", "GISTools", "gridExtra", "gstat",
+  "jtools", "kableExtra", "knitr", "lme4", "lmtest",
+  "lubridate", "MASS", "merTools", "plyr", "RColorBrewer",
+  "rgdal", "sf", "sjPlot", "sp", "spgwr",
+  "spatialreg", "spacetime", "stargazer", "tidyverse", "tmap",
+  "viridis", "tufte"
+)
 
-**CONGRATULATIONS YOU HAVE NOW SUCCESFULLY INSTALLED R, RStudio AND ALL THE PACKAGES YOU NEED TO COMPLETE THE COURSE.**
+new.packages.cran <- list.of.packages.cran[!(list.of.packages.cran %in% installed.packages()[,"Package"])]
+if(length(new.packages.cran)) install.packages(new.packages.cran)
 
-**You can now start coding**
+for(i in 1:length(list.of.packages.cran)) {
+  library(list.of.packages.cran[i], character.only = T)
+}
+```
 
+- Copy the code above by clicking button to the top right of the code chunk which says **Copy to clipboard** when you hover over it.
+
+```{r Packages_1, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp4/Packages_1.png")
+```
+
+- Open _RStudio_ and click the image of a _'white and green plus sign on top of a white square'_ that says **New File** when you hover over it. Then, from the drop-down menu that appears, click on the option **R Script**.
+
+```{r Packages_2, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp4/Packages_2.png")
+```
+
+- A new window with a blank background and the heading **_Untitled1_** (indicated by red arrow above) should appear. 
+
+- Paste the copied code into this window by right-clicking and selecting **Paste**.
+
+```{r Packages_3, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp4/Packages_3.png")
+```
+
+- Click on the **Code** menu at the top of the screen. Select **Run Region** from the drop-down menu, then click **Run All** from the second drop-down menu.
+
+- This should install all the packages you need to complete the ‘Spatial Modelling for Data Scientists’ module.
+
+<div class="alert alert-success" style="font-size:120%">
+<b>NOTE</b>: <br>
+    
+The script will install several dozen packages on your computer. This could take around 20-30 minutes to complete, depending on you computer and bandwidth.
+   
+</div>
+
+```{r Packages_4, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp4/Packages_4.png")
+```
+
+- Once the code has finished running, a blue arrow with a gray vertical line next to it (indicated by red arrow above) will appear at the bottom of the _Console_ window at the bottom left of the screen. This means R has finished the task it was given and is ready for it's next command.
+
+```{r Packages_5, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp4/Packages_5.png")
+```
+
+- You can now close the _R Script_ file you created by clicking on the `x` next to the header **_Untitled1_** (indicated by red arrow above). You do not need to save the file.
+
+<br>
+
+<div class="alert alert-success" style="font-size:120%">
+
+Congratulations!!! You have now successfully installed R, RStudio and all packages required to complete the course!
+
+You can now start coding.
+
+</div>
 
 ![](https://media.giphy.com/media/PiQejEf31116URju4V/giphy.gif)
 
@@ -205,7 +271,7 @@ knitr::include_graphics("figs/chp4/Studio_10.png")
 
 ## Uninstall R and RStudio {#uninstall_otherwin .unnumbered}
 
-This section shows how to uninstall programs on Windows 10 Home Edition.
+This section shows how to uninstall programs on Windows 10 Home Edition. You only need to read this section if you have an older version of R or RStudio already installed on your computer.
 
 ```{r Uninstall_1, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp4/Uninstall_1.png")

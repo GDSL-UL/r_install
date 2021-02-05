@@ -53,6 +53,70 @@
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -179,7 +243,7 @@
 <blockquote>
 <p><a href="https://hub.docker.com/editions/community/docker-ce-desktop-windows/">https://hub.docker.com/editions/community/docker-ce-desktop-windows/</a></p>
 </blockquote>
-<p><img src="figs/chp3/InstallDocker1.png" style="display: block; margin: auto;" />
+<p><img src="figs/chp3/InstallDocker1.png" width="960" style="display: block; margin: auto;" />
 <br></p>
 <ol start="2" style="list-style-type: decimal">
 <li>Download a copy of the Docker Desktop (highlighted in red on the image above). Click “Save File”. Note the file is approximately 490Mb so, depending on your internet connection, it might take a while to download.</li>
@@ -232,7 +296,7 @@
 <li>In a new PowerShell window, type the following command to run the container and hit enter:</li>
 </ol>
 <pre class="shell"><code>docker run -d -e PASSWORD=test123 -p 8787:8787 -v ${PWD}:/home/rstudio/work darribas/gdsr:1.0alpha</code></pre>
-<p><img src="figs/chp3/Win_RStudioServer_1.png" style="display: block; margin: auto;" /></p>
+<p><img src="figs/chp3/Win_RStudioServer_1.png" width="542" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <p>You have now started an RStudio session.</p>
 <div class="alert alert-info" style="font-size:120%">
@@ -246,14 +310,14 @@
 <pre class="shell"><code>username: rstudio
 password: test123</code></pre>
 <p><br></p>
-<p><img src="figs/chp3/Win_RStudioServer_2.png" style="display: block; margin: auto;" /></p>
+<p><img src="figs/chp3/Win_RStudioServer_2.png" width="459" style="display: block; margin: auto;" /></p>
 <p>Now you are in RStudio Server, you can start coding or opening a new file. Please refer to Rowe and Arribas-Bel (2021) for an introduction to the RStudio interface, R Script and R Notebook.</p>
 <p><br></p>
 <div id="using-rstudio-server" class="section level4 unlisted unnumbered">
 <h4>Using RStudio Server</h4>
 <p>A R notebook is where you will run your code and can add text. The top header is called YAML metadata and each shaded box is called a kernel (or code chunk) contained within delimiters <code>{r} and</code>.</p>
 <p>Type 1 + 1 into a code chunk. To run the code click the play icon as highlighted in red below.</p>
-<p><img src="figs/chp3/Win_RStudioServer_3.png" style="display: block; margin: auto;" /></p>
+<p><img src="figs/chp3/Win_RStudioServer_3.png" width="480" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <div class="alert alert-info" style="font-size:120%">
 <p><b>IMPORTANT</b>: <br></p>
@@ -261,28 +325,28 @@ password: test123</code></pre>
 <p>Everything saved outside the <code>work</code> folder will be <em>destroyed</em> as soon as you shut down the session.</p>
 </div>
 <p>You can access other files on your machine through the work folder in the Files Browser. From here you can navigate to your Documents and designated folder for this module.</p>
-<p><img src="figs/chp3/Win_RStudioServer_4.png" style="display: block; margin: auto;" /></p>
+<p><img src="figs/chp3/Win_RStudioServer_4.png" width="480" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <p>Here I am navigating to the san folder that we have created for this module in my Downloads. You can replace this with the pathway to the folder you create for this module.</p>
-<p><img src="figs/chp3/Win_RStudioServer_5.png" style="display: block; margin: auto;" /></p>
+<p><img src="figs/chp3/Win_RStudioServer_5.png" width="480" style="display: block; margin: auto;" /></p>
 <p><br></p>
-<p><img src="figs/chp3/Win_RStudioServer_6.png" style="display: block; margin: auto;" /></p>
+<p><img src="figs/chp3/Win_RStudioServer_6.png" width="959" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <p>You can save your notebook here using File &gt; Save As.</p>
-<p><img src="figs/chp3/Win_RStudioServer_7.png" style="display: block; margin: auto;" /></p>
+<p><img src="figs/chp3/Win_RStudioServer_7.png" width="262" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <p>And you can create new folders to organise your work.</p>
-<p><img src="figs/chp3/Win_RStudioServer_8.png" style="display: block; margin: auto;" /></p>
+<p><img src="figs/chp3/Win_RStudioServer_8.png" width="324" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 </div>
 <div id="ending-your-session-2" class="section level3 unlisted unnumbered">
 <h3>Ending your session</h3>
 <p>Once you have finished in your RStudio session and have saved all your work, you can end the session by closing your browser.</p>
-<p><img src="figs/chp3/Win_RStudioServer_9.png" style="display: block; margin: auto;" /></p>
+<p><img src="figs/chp3/Win_RStudioServer_9.png" width="536" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <p>Then, type docker container stop and copy the CONTAINER ID from the output above as shown here:</p>
-<p><img src="figs/chp3/Win_RStudioServer_10.png" style="display: block; margin: auto;" /></p>
+<p><img src="figs/chp3/Win_RStudioServer_10.png" width="596" style="display: block; margin: auto;" /></p>
 <p>You can now safely shut the terminal window.</p>
 <p><br></p>
 <p>Next time you go to run a R Notebook you will NOT need to repeat the whole process as you have already installed Docker and the GDSR environment. Instead you can start from Running the container and carry on from there.</p>
