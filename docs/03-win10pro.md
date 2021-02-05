@@ -94,50 +94,49 @@ The following sections cover how to start up the software you have just installe
 
 ### Running the container {.unlisted .unnumbered}
 
-To start up Python through Docker, follow these steps:
-
 1. In a new PowerShell window, type the following command to run the container and hit enter: 
 
 ```shell
-docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:5.0
+docker run -d -e PASSWORD=test123 -p 8787:8787 -v ${PWD}:/home/rstudio/work darribas/gdsr:1.0alpha
 ```
 
-<img src="figs/chp3/docker_run.png" width="614" style="display: block; margin: auto;" />
+<img src="figs/chp3/Win_RStudioServer_1.png" width="542" style="display: block; margin: auto;" />
 
 <br>
 
-You have now started a Python session. 
+You have now started an RStudio session. 
 
 
 <div class="alert alert-info" style="font-size:120%">
 <b>IMPORTANT</b>: <br>
     
-Please do NOT close the PowerShell window until you are finished in this Python session
+Please do NOT close the PowerShell window until you are finished in this RStudio session
    
 </div>
 
-2. To access this session go to your chosen web browser (e.g. Firefox/Chrome) and type: `localhost:8888` into the search bar. You should see something similar to:
+2. To access this session go to your chosen web browser (e.g. Firefox/Chrome) and type: `localhost:8888` into the search bar. 
+3.	The page that loads will prompt you for a username and password as shown. Type the following:
+
+```shell
+username: rstudio
+password: test123
+```
 
 <br>
 
-<img src="figs/chp3/jupyter_token.png" width="696" style="display: block; margin: auto;" />
+<img src="figs/chp3/Win_RStudioServer_2.png" width="459" style="display: block; margin: auto;" />
 
-3. The page that loads will prompt you for a password or a token. This can be found in the text in the terminal following the last command you ran. This will be a long series of numbers and letters will be preceded by `?token=`. Copy this long series of characters and paste into the password box in your browser.
-
-<img src="figs/chp3/docker_token.png" width="614" style="display: block; margin: auto;" />
-
-
-4. Now you are in Jupyter Lab, it should look like this, more or less:
-
-<img src="figs/chp3/lab.png" width="696" style="display: block; margin: auto;" />
+Now you are in RStudio Server, you can start coding or opening a new file. Please refer to Rowe and Arribas-Bel (2021) for an introduction to the RStudio interface, R Script and R Notebook.
 
 <br>
 
 #### Using RStudio Server {.unlisted .unnumbered}
 
-- This notebook is where you will run your code. Each shaded box is called a kernel. To test this out you can type `print('test')` into one of these kernels. To run the code use the shortcut `Ctrl + Enter`.
+A R notebook is where you will run your code and can add text. The top header is called YAML metadata and each shaded box is called a kernel (or code chunk) contained within delimiters ```{r} and ```.
 
-<img src="figs/chp1/Figure12.png" width="1314" style="display: block; margin: auto;" />
+Type 1 + 1 into a code chunk. To run the code click the play icon as highlighted in red below.
+
+<img src="figs/chp3/Win_RStudioServer_3.png" width="480" style="display: block; margin: auto;" />
 
 <br>
 
@@ -150,37 +149,48 @@ Everything saved outside the `work` folder will be _destroyed_ as soon as you sh
    
 </div>
 
-- You can save your notebook using **File** > **Save notebook as**
-<img src="figs/chp1/Figure13.png" width="538" style="display: block; margin: auto;" />
+You can access other files on your machine through the work folder in the Files Browser. From here you can navigate to your Documents and designated folder for this module.
+
+<img src="figs/chp3/Win_RStudioServer_4.png" width="480" style="display: block; margin: auto;" />
 
 <br>
 
-- You can create new folders to organise your work
-<img src="figs/chp1/Figure14.png" width="540" style="display: block; margin: auto;" />
+Here I am navigating to the san folder that we have created for this module in my Downloads. You can replace this with the pathway to the folder you create for this module.
+
+<img src="figs/chp3/Win_RStudioServer_5.png" width="480" style="display: block; margin: auto;" />
 
 <br>
 
-- And you can access other files on your machine through the 'work' folder in the File Browser. From here you can navigate to your Documents and designated folder for this module
+<img src="figs/chp3/Win_RStudioServer_6.png" width="959" style="display: block; margin: auto;" />
 
-<img src="figs/chp1/Figure15a.png" width="538" style="display: block; margin: auto;" />
+<br>
 
-<img src="figs/chp1/Figure15b.png" width="538" style="display: block; margin: auto;" />
+You can save your notebook here using File > Save As.
 
-<img src="figs/chp1/Figure15c.png" width="538" style="display: block; margin: auto;" />
+<img src="figs/chp3/Win_RStudioServer_7.png" width="262" style="display: block; margin: auto;" />
+
+<br>
+
+And you can create new folders to organise your work.
+
+<img src="figs/chp3/Win_RStudioServer_8.png" width="324" style="display: block; margin: auto;" />
+
 <br>
 
 ### Ending your session {.unlisted .unnumbered}
 
-Once you have finished in your Jupyter session and have saved all your work, you can end the session from the terminal.
+Once you have finished in your RStudio session and have saved all your work, you can end the session by closing your browser.
 
-Using `Ctrl + C` will prompt a `y/n` option. Either type `y` or `Ctrl + C` again to end the session. 
-
-<img src="figs/chp3/docker_end.png" width="614" style="display: block; margin: auto;" />
+<img src="figs/chp3/Win_RStudioServer_9.png" width="536" style="display: block; margin: auto;" />
 
 <br>
+
+Then, type docker container stop and copy the CONTAINER ID from the output above as shown here:
+
+<img src="figs/chp3/Win_RStudioServer_10.png" width="596" style="display: block; margin: auto;" />
 
 You can now safely shut the terminal window.
 
 <br>
 
-Next time you go to run a Jupyter Notebook you will not need to repeat the whole process as you have already installed Docker and the GDS environment. Instead you can start from [Running Python through Docker](#winpro_run) and carry on from there.
+Next time you go to run a R Notebook you will NOT need to repeat the whole process as you have already installed Docker and the GDSR environment. Instead you can start from Running the container and carry on from there.
