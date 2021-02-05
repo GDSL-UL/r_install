@@ -7,7 +7,7 @@ This guide covers the installation of R and RStudio on machines running Windows 
     
 This module has been written using the most up-to-date versions of R, RStudio and relevant packages. To avoid software compatibility issues it is important you have these same versions installed on your home computer.
 
-**Therefore, if you have R or RStudio already installed on your computer, please uninstall them before following the instructions below.**
+**Therefore, if you have R or RStudio already installed on your computer, please first uninstall them unsing the instructions [here](#uninstall_otherwin).**
     
 </div>
 
@@ -191,7 +191,7 @@ knitr::include_graphics("figs/chp4/Studio_10.png")
 
 ## Install Packages  {.unlisted .unnumbered}
 
-Section on how to install relevant packages for Windows.
+[Test link](deps/rgds_deps.R)
 
 
 **CONGRATULATIONS YOU HAVE NOW SUCCESFULLY INSTALLED R, RStudio AND ALL THE PACKAGES YOU NEED TO COMPLETE THE COURSE.**
@@ -201,4 +201,54 @@ Section on how to install relevant packages for Windows.
 
 ![](https://media.giphy.com/media/PiQejEf31116URju4V/giphy.gif)
 
+<br>
 
+## Uninstall R and RStudio {#uninstall_otherwin .unnumbered}
+
+This section shows how to uninstall programs on Windows 10 Home Edition.
+
+```{r Uninstall_1, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp4/Uninstall_1.png")
+```
+
+- Right click on the Windows logo in the left bottom corner of your screen and click on **Settings**.
+
+```{r Uninstall_2, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp4/Uninstall_2.png")
+```
+
+- At the _Settings_ menu, click on **Apps**.
+
+```{r Uninstall_3, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp4/Uninstall_3.png")
+```
+
+- This should take you to a page called _Apps & features_, where you can select programs to uninstall. Scroll down until you see any program relating to R or RStudio (in this case 'R 3.6.1', RStudio and 'Rtools version 3.5').
+
+- Click on the program you wish to uninstall and select **Uninstall**.
+
+**NOTE: Once you click Uninstall, a window might pop up that asks you if you want to allow this app to make changes to your device click _YES_ to continue.**
+
+```{r Uninstall_4, fig.align = 'center', echo = FALSE, out.width = "400px"}
+knitr::include_graphics("figs/chp4/Uninstall_4.png")
+```
+
+- You will then be asked whether you are sure you want to remove the program. Click **Yes**.
+
+```{r Uninstall_5, fig.align = 'center', echo = FALSE, out.width = "600px"}
+knitr::include_graphics("figs/chp4/Uninstall_5.png")
+```
+
+-	The program is now uninstalling.
+
+```{r Uninstall_6, fig.align = 'center', echo = FALSE, out.width = "400px"}
+knitr::include_graphics("figs/chp4/Uninstall_6.png")
+```
+
+- Once this is complete, you will get a message confirming that the installation was successful. Click **OK**.
+
+<br>
+
+**CONGRATULATIONS YOU HAVE NOW SUCCESFULLY UNINSTALLED THE PROGRAM!**
+
+**Make sure to repeat this process until all programs relating to R (i.e. R, RStudio and Rtools) have been uninstalled from your machine.**
