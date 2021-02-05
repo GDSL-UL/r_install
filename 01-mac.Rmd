@@ -129,7 +129,7 @@ Please do NOT close the terminal window until you are finished in this RStudio s
 knitr::include_graphics("figs/chp1/Figure10a.png")
 ```
 
-3. Go to *`System Preferences'* > *`Security & Privacy'*. The following window will appear:
+3. Go to *System Preferences* > *Security & Privacy*. The following window will appear:
 
 ```{r fig10b, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure10b.png")

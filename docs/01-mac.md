@@ -3,7 +3,7 @@
 <div class="alert alert-info" style="font-size:120%">
 <b>NOTE</b>: <br>
 
-This guide shows you how to install on MacOS via the `gds_env` [@gds_env]
+This guide shows you how to install on MacOS via the `gdsr`
 
 </div>
 
@@ -51,10 +51,10 @@ You have successfully downloaded Docker!
 
 Now we have Docker installed we can use it to access Python and all the associated packages we need for the practicals
 
-### Installing the GDS environment {.unlisted .unnumbered}
+### Installing the GDSR environment {.unlisted .unnumbered}
 
 1. Access your terminal: **Launchpad** > **Other** > **Terminal**
-2. In a fresh line in the terminal type the following to install the GDS environment container: 
+2. In a fresh line in the terminal type the following to install the GDSR environment container: 
 
 ```shell
 docker pull darribas/gdsr:1.0alpha
@@ -111,7 +111,7 @@ Please do NOT close the terminal window until you are finished in this RStudio s
 
 <img src="figs/chp1/Figure10a.png" width="425" style="display: block; margin: auto;" />
 
-3. Go to *`System Preferences'* > *`Security & Privacy'*. The following window will appear:
+3. Go to *System Preferences* > *Security & Privacy*. The following window will appear:
 
 <img src="figs/chp1/Figure10b.png" width="668" style="display: block; margin: auto;" />
 
@@ -196,4 +196,4 @@ You can now safely shut the terminal window.
 
 <br>
 
-Next time you go to run a R Notebook you will NOT need to repeat the whole process as you have already installed Docker and the RGDS environment. Instead you can start from [Running the container] and carry on from there.
+Next time you go to run a R Notebook you will NOT need to repeat the whole process as you have already installed Docker and the GDSR environment. Instead you can start from [Running the container] and carry on from there.
