@@ -29,7 +29,8 @@ list.of.packages.cran <- c(
   "stargazer",
   "tidyverse",
   "tmap",
-  "viridis"
+  "viridis",
+  "tufte"
 )
 
 new.packages.cran <- list.of.packages.cran[!(list.of.packages.cran %in% installed.packages()[,"Package"])]
