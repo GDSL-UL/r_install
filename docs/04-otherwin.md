@@ -167,7 +167,7 @@ for(i in 1:length(list.of.packages.cran)) {
 }
 ```
 
-- Copy the code above by clicking button to the top right of the code chunk which says **Copy to clipboard** when you hover over it.
+- Copy the code above by clicking the button to the top right of the code chunk which says **Copy to clipboard** when you hover over it.
 
 <img src="figs/chp4/Packages_1.png" width="683" style="display: block; margin: auto;" />
 

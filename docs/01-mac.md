@@ -186,7 +186,7 @@ Once you have finished in your RStudio session and have saved all your work, you
 
 <img src="figs/chp1/Figure16.png" width="887" style="display: block; margin: auto;" />
 
-2) Then, type `docker container stop` and copy the *CONTAINER ID* from the output above as shown here:
+2) Then, type `docker container rm` and copy the *CONTAINER ID* from the output above as shown here:
 
 <img src="figs/chp1/Figure16a.png" width="887" style="display: block; margin: auto;" />
 
