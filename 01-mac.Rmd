@@ -65,7 +65,7 @@ Now we have Docker installed we can use it to access Python and all the associat
 2. In a fresh line in the terminal type the following to install the GDSR environment container: 
 
 ```shell
-docker pull darribas/gdsr:1.0alpha
+docker pull darribas/gdsr:1.0
 ```
 
 ```{r fig5, fig.align = 'center', echo = FALSE}
@@ -91,7 +91,7 @@ Make sure you are connected to the internet and it is a stable connection. This 
 
 You will know the process has completed successfully when each line says *'Pull complete'* and the new line shows your machine name.
 
-If everything has gone according to plan, you should see `darribas/gdsr:1.0alpha` show up on your terminal when you type `docker image ls` (**NOTE** in the image below there are other containers that are not required, do not worry if you don't have those or slightly different values on the ID and the "CREATED" columns, the important bit is having `darribas/gdsr:1.0alpha` listed):
+If everything has gone according to plan, you should see `darribas/gdsr:1.0` show up on your terminal when you type `docker image ls` (**NOTE** in the image below there are other containers that are not required, do not worry if you don't have those or slightly different values on the ID and the "CREATED" columns, the important bit is having `darribas/gdsr:1.0` listed):
 
 ```{r fig6ii, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure8.png")
@@ -106,7 +106,7 @@ The following sections cover how to spin up a session you have just installed, u
 
 1. In the new terminal line, type the following command to run the container: 
 
-`docker run -d -e PASSWORD=test123 -p 8787:8787 -v "${PWD}":/home/rstudio/work darribas/gdsr:1.0alpha`
+`docker run -d -e PASSWORD=test123 -p 8787:8787 -v "${PWD}":/home/rstudio/work darribas/gdsr:1.0`
 
 ```{r fig7, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure7.png")

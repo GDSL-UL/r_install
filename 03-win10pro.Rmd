@@ -1,6 +1,6 @@
 # Windows 10 Pro/Education {#win10pro .unnumbered}
 
-This guide shows you how to install Docker and run R/RStudio virtually using an environment we have created called `darribas/gdsr:1.0alpha` [@gds_env]. This approach is preferred for anyone using 'Windows 10 Pro/Education' because it avoids potential compatibility issues between the latest versions of R/RStudio and other software on your computer. 
+This guide shows you how to install Docker and run R/RStudio virtually using an environment we have created called [`darribas/gdsr:1.0`](https://github.com/GDSL-UL/gdsr). This approach is preferred for anyone using 'Windows 10 Pro/Education' because it avoids potential compatibility issues between the latest versions of R/RStudio and other software on your computer. 
 
 **Please therefore follow these steps even if R/RStudio is already installed on your computer.**
 
@@ -72,7 +72,7 @@ Once you have Docker installed and running on your machine, installing everythin
 2. Run (type and hit "Enter") the following command:
 
 ```shell
-docker pull darribas/gdsr:1.0alpha
+docker pull darribas/gdsr:1.0
 ```
 
 ```{r winpro_pull, fig.align = 'center', echo = FALSE, out.width = "600px"}
@@ -107,7 +107,7 @@ The following sections cover how to start up the software you have just installe
 1. In a new PowerShell window, type the following command to run the container and hit enter: 
 
 ```shell
-docker run -d -e PASSWORD=test123 -p 8787:8787 -v ${PWD}:/home/rstudio/work darribas/gdsr:1.0alpha
+docker run -d -e PASSWORD=test123 -p 8787:8787 -v ${PWD}:/home/rstudio/work darribas/gdsr:1.0
 ```
 
 ```{r fig.align = 'center', echo = FALSE}
