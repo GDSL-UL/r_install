@@ -22,19 +22,19 @@ R is the coding software that will execute the code you write in RStudio.
 
 
 ```{r fig1, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Picture_1.png")
+knitr::include_graphics("figs/chp4/Picture_1.PNG")
 ```
 
 -  Open the [R download page](https://cran.rstudio.com/) in your browser and click on **Download R for Windows**.  
 
 ```{r fig2, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Picture_2.png")
+knitr::include_graphics("figs/chp4/Picture_2.PNG")
 ```
 
 -  Click on **base** (highlighted in red here) as you are installing R for the first time. 
 
 ```{r fig3, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Picture_3.png")
+knitr::include_graphics("figs/chp4/Picture_3.PNG")
 ```
 
 -  Click on **Download R 4.0.3 for Windows** (highlighted in red here) to start the download. 
@@ -42,7 +42,7 @@ knitr::include_graphics("figs/chp4/Picture_3.png")
 ### Install R {.unlisted .unnumbered}
 
 ```{r fig4, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Picture_4.png")
+knitr::include_graphics("figs/chp4/Picture_4.PNG")
 ```
 
 -	Navigate to your **Downloads** folder and double click on the **_R-4.0.3-win_** file.
@@ -50,59 +50,59 @@ knitr::include_graphics("figs/chp4/Picture_4.png")
 **NOTE: Once you double click on the file, a window might pop up that asks you if you want to allow this app to make changes to your device click _YES_ to continue the installation**
 
 ```{r fig5, fig.align = 'center', echo = FALSE, out.width = "350px"}
-knitr::include_graphics("figs/chp4/R_1.png")
+knitr::include_graphics("figs/chp4/R_1.PNG")
 ```
 
 -	A new window will pop up asking you to select a language for the installation. Select **English** and click **_OK_**.
 
 ```{r fig6, fig.align = 'center', echo = FALSE, out.width = "600px"}
-knitr::include_graphics("figs/chp4/R_2.png")
+knitr::include_graphics("figs/chp4/R_2.PNG")
 ```
 
 -	The next window shows the Terms and Conditions. Click **_Next_** to continue with the installation. 
 
 ```{r fig7, fig.align = 'center', echo = FALSE, out.width = "600px"}
-knitr::include_graphics("figs/chp4/R_3.png")
+knitr::include_graphics("figs/chp4/R_3.PNG")
 ```
 
 -	The next window will ask you to specify where you would like to install R. Leave the default settings and click **_Next_**. 
 
 ```{r fig8, fig.align = 'center', echo = FALSE, out.width = "600px"}
-knitr::include_graphics("figs/chp4/R_4.png")
+knitr::include_graphics("figs/chp4/R_4.PNG")
 ```
 
 -	The next window will ask you what components of R you want to install. Leave the default settings (all boxes ticked) and click **_Next_**. 
 
 
 ```{r fig9, fig.align = 'center', echo = FALSE, out.width = "600px"}
-knitr::include_graphics("figs/chp4/R_5.png")
+knitr::include_graphics("figs/chp4/R_5.PNG")
 ```
 
 -	The next window will ask you if you want to customise the startup options.
 - Select **No** and click **_Next_**.  
 
 ```{r fig10, fig.align = 'center', echo = FALSE, out.width = "600px"}
-knitr::include_graphics("figs/chp4/R_6.png")
+knitr::include_graphics("figs/chp4/R_6.PNG")
 ```
 
 -	The next window will ask you to select/name a start menu folder.
 - Leave the default settings (R) and click **_Next_**.  
 
 ```{r fig11, fig.align = 'center', echo = FALSE, out.width = "600px"}
-knitr::include_graphics("figs/chp4/R_7.png")
+knitr::include_graphics("figs/chp4/R_7.PNG")
 ```
 
 -	The next window will ask you to select additional task that will be performed while installing R.
 - Leave the default (Additional shortcuts unticked,Registry entries ticked) and click **_Next_** .
 
 ```{r fig12, fig.align = 'center', echo = FALSE, out.width = "600px"}
-knitr::include_graphics("figs/chp4/R_8.png")
+knitr::include_graphics("figs/chp4/R_8.PNG")
 ```
 
 -	R will now install.
 
 ```{r fig13, fig.align = 'center', echo = FALSE, out.width = "600px"}
-knitr::include_graphics("figs/chp4/R_9.png")
+knitr::include_graphics("figs/chp4/R_9.PNG")
 ```
 
 -	Once the installation is complete, click **_Finish_**. 
@@ -117,20 +117,20 @@ knitr::include_graphics("figs/chp4/R_9.png")
 R-Studio is the R user interface in which you can code. 
 
 ```{r fig14, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Studio_1.png")
+knitr::include_graphics("figs/chp4/Studio_1.PNG")
 ```
 
 - Go to the [R-studio download page](https://rstudio.com/products/rstudio/download/).
 
 ```{r fig15, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Studio_2.png")
+knitr::include_graphics("figs/chp4/Studio_2.PNG")
 ```
 
 - On the download page, scroll down and click on the **_Download_** button under **RStudio Desktop**. 
 
 
 ```{r fig16, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Studio_3.png")
+knitr::include_graphics("figs/chp4/Studio_3.PNG")
 ```
 
 - Click on **Download RStudio for Windows** to download the installation file 
@@ -138,20 +138,20 @@ knitr::include_graphics("figs/chp4/Studio_3.png")
 ### Install RStudio  {.unlisted .unnumbered}
 
 ```{r fig17, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Studio_4.png")
+knitr::include_graphics("figs/chp4/Studio_4.PNG")
 ```
 
 -	Navigate to your **Downloads** folder and double click on the **RStudio-1.4.1103** file.  
 **NOTE: Once you double click on the file, a window might pop up that asks you if you want to allow this app to make changes to your device click _YES_ to continue the installation**
 
 ```{r fig18, fig.align = 'center', echo = FALSE, out.width = "600px"}
-knitr::include_graphics("figs/chp4/Studio_5.png")
+knitr::include_graphics("figs/chp4/Studio_5.PNG")
 ```
 
 -	In the installation window that opens, click **_Next_**.
 
 ```{r fig19, fig.align = 'center', echo = FALSE, out.width = "600px"}
-knitr::include_graphics("figs/chp4/Studio_6.png")
+knitr::include_graphics("figs/chp4/Studio_6.PNG")
 ```
 
 - In the next window, you can specify where you want to install RStudio.
@@ -159,7 +159,7 @@ knitr::include_graphics("figs/chp4/Studio_6.png")
 
 
 ```{r fig20, fig.align = 'center', echo = FALSE, out.width = "600px"}
-knitr::include_graphics("figs/chp4/Studio_7.png")
+knitr::include_graphics("figs/chp4/Studio_7.PNG")
 ```
 
 -	The next window will ask you to choose a Start Menu Folder.
@@ -167,21 +167,21 @@ knitr::include_graphics("figs/chp4/Studio_7.png")
 
 
 ```{r fig21, fig.align = 'center', echo = FALSE, out.width = "600px"}
-knitr::include_graphics("figs/chp4/Studio_8.png")
+knitr::include_graphics("figs/chp4/Studio_8.PNG")
 ```
 
 -	RStudio is now installing. 
 
 
 ```{r fig22, fig.align = 'center', echo = FALSE, out.width = "600px"}
-knitr::include_graphics("figs/chp4/Studio_9.png")
+knitr::include_graphics("figs/chp4/Studio_9.PNG")
 ```
 
 -	Once the intallation is completed, click on **_Finish_**.
 
 ## Open RStudio  {.unlisted .unnumbered}
 ```{r Inst23, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Studio_10.png")
+knitr::include_graphics("figs/chp4/Studio_10.PNG")
 ```
 
 - To open RStudio, click on the Windows logo in the left bottom corner of your screen and either type **_RStudio_** or look for the **RStudio folder** in the menu. 
