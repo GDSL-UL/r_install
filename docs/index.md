@@ -1,7 +1,7 @@
 --- 
 title: "R Installation Guide"
 author: "Francisco Rowe, Dani Arribas-Bel"
-date: "2021-02-07"
+date: "2021-02-08"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -18,7 +18,7 @@ This resource provides step-by-step descriptions on how to install and run RStud
 
 Select your Operating System and follow the steps.
 
-<img src="figs/intro/tree.jpeg" width="647" style="display: block; margin: auto;" />
+<img src="figs/intro/tree.jpeg" width="1294" style="display: block; margin: auto;" />
 
 
 <mark> **A1** [MacOS Installation](#macos) </mark>

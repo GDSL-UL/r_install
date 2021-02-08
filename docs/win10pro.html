@@ -24,7 +24,7 @@
 <meta name="author" content="Francisco Rowe, Dani Arribas-Bel" />
 
 
-<meta name="date" content="2021-02-07" />
+<meta name="date" content="2021-02-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,6 +33,7 @@
   
 <link rel="prev" href="linux.html"/>
 <link rel="next" href="otherWin.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,22 +51,20 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -85,7 +84,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -135,62 +134,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Purpose</a></li>
-<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html"><i class="fa fa-check"></i>MacOS Installation</a><ul>
-<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#installation"><i class="fa fa-check"></i>Installation</a><ul>
-<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#requirements"><i class="fa fa-check"></i>Requirements</a></li>
-<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#docker-install-steps"><i class="fa fa-check"></i>Docker install steps</a></li>
-<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#using-docker"><i class="fa fa-check"></i>Using Docker</a></li>
-<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#installing-the-gdsr-environment"><i class="fa fa-check"></i>Installing the GDSR environment</a></li>
-<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#check-success"><i class="fa fa-check"></i>Check success</a></li>
+<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html"><i class="fa fa-check"></i>MacOS Installation</a>
+<ul>
+<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#installation"><i class="fa fa-check"></i>Installation</a></li>
+<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#running-rstudio"><i class="fa fa-check"></i>Running RStudio</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#running-rstudio"><i class="fa fa-check"></i>Running RStudio</a><ul>
-<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#running-the-container"><i class="fa fa-check"></i>Running the container</a></li>
-<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#using-a-r-notebook"><i class="fa fa-check"></i>Using a R Notebook</a></li>
-<li class="chapter" data-level="" data-path="macos.html"><a href="macos.html#ending-your-session"><i class="fa fa-check"></i>Ending your session</a></li>
+<li class="chapter" data-level="" data-path="linux.html"><a href="linux.html"><i class="fa fa-check"></i>Linux Installation</a>
+<ul>
+<li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#linux_install"><i class="fa fa-check"></i>Installation</a></li>
+<li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#linux_run"><i class="fa fa-check"></i>Running RStudio</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html"><i class="fa fa-check"></i>Windows 10 Pro/Education</a>
+<ul>
+<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_run"><i class="fa fa-check"></i>Running RStudio Server</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="linux.html"><a href="linux.html"><i class="fa fa-check"></i>Linux Installation</a><ul>
-<li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#linux_install"><i class="fa fa-check"></i>Installation</a><ul>
-<li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#requirements-1"><i class="fa fa-check"></i>Requirements</a></li>
-<li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#docker-install-steps-1"><i class="fa fa-check"></i>Docker install steps</a></li>
-<li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#installing-the-gds-container"><i class="fa fa-check"></i>Installing the GDS container</a></li>
-<li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#check-success-1"><i class="fa fa-check"></i>Check success</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#linux_run"><i class="fa fa-check"></i>Running Python</a><ul>
-<li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#running-the-container-1"><i class="fa fa-check"></i>Running the container</a></li>
-<li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#using-jupyter-notebook"><i class="fa fa-check"></i>Using Jupyter Notebook</a></li>
-<li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#ending-your-session-1"><i class="fa fa-check"></i>Ending your session</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html"><i class="fa fa-check"></i>Windows 10 Pro/Education</a><ul>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#installing-docker"><i class="fa fa-check"></i>Installing Docker</a><ul>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#requirements-2"><i class="fa fa-check"></i>Requirements</a></li>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_docker_install_steps"><i class="fa fa-check"></i>Docker install steps</a></li>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_docker_gds"><i class="fa fa-check"></i>Installing the container</a></li>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_success"><i class="fa fa-check"></i>Check success</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_run"><i class="fa fa-check"></i>Running RStudio Server</a><ul>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#running-the-container-2"><i class="fa fa-check"></i>Running the container</a></li>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#ending-your-session-2"><i class="fa fa-check"></i>Ending your session</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="otherWin.html"><a href="otherWin.html"><i class="fa fa-check"></i>Windows 10 Home/pre-10</a><ul>
-<li class="chapter" data-level="" data-path="otherWin.html"><a href="otherWin.html#download-and-install-r"><i class="fa fa-check"></i>Download and Install R</a><ul>
-<li class="chapter" data-level="" data-path="otherWin.html"><a href="otherWin.html#download-r"><i class="fa fa-check"></i>Download R</a></li>
-<li class="chapter" data-level="" data-path="otherWin.html"><a href="otherWin.html#install-r"><i class="fa fa-check"></i>Install R</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="otherWin.html"><a href="otherWin.html#download-and-install-rstudio"><i class="fa fa-check"></i>Download and Install RStudio</a><ul>
-<li class="chapter" data-level="" data-path="otherWin.html"><a href="otherWin.html#download-rstudio"><i class="fa fa-check"></i>Download RStudio</a></li>
-<li class="chapter" data-level="" data-path="otherWin.html"><a href="otherWin.html#install-rstudio"><i class="fa fa-check"></i>Install RStudio</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="otherWin.html"><a href="otherWin.html#open-rstudio"><i class="fa fa-check"></i>Open RStudio</a></li>
-<li class="chapter" data-level="" data-path="otherWin.html"><a href="otherWin.html#install-packages"><i class="fa fa-check"></i>Install Packages</a></li>
+<li class="chapter" data-level="" data-path="otherWin.html"><a href="otherWin.html"><i class="fa fa-check"></i>Windows 10 Home/pre-10</a>
+<ul>
 <li class="chapter" data-level="" data-path="otherWin.html"><a href="otherWin.html#uninstall_otherwin"><i class="fa fa-check"></i>Uninstall R and RStudio</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="windows-version.html"><a href="windows-version.html"><i class="fa fa-check"></i>Windows Specifications</a><ul>
-<li class="chapter" data-level="" data-path="windows-version.html"><a href="windows-version.html#windows-version-1"><i class="fa fa-check"></i>Windows Version</a></li>
-<li class="chapter" data-level="" data-path="windows-version.html"><a href="windows-version.html#windows-arch"><i class="fa fa-check"></i>Windows Architechture</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="windows-version.html"><a href="windows-version.html"><i class="fa fa-check"></i>Windows Specifications</a></li>
 <li class="chapter" data-level="" data-path="contributors.html"><a href="contributors.html"><i class="fa fa-check"></i>Contributors</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -215,7 +177,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="win10pro" class="section level1 unnumbered">
 <h1>Windows 10 Pro/Education</h1>
-<p>This guide shows you how to install Docker and run R/RStudio virtually using an environment we have created called <code>darribas/gdsr:1.0alpha</code> <span class="citation">(Arribas-Bel <a href="#ref-gds_env" role="doc-biblioref">2019</a>)</span>. This approach is preferred for anyone using ‘Windows 10 Pro/Education’ because it avoids potential compatibility issues between the latest versions of R/RStudio and other software on your computer.</p>
+<p>This guide shows you how to install Docker and run R/RStudio virtually using an environment we have created called <a href="https://github.com/GDSL-UL/gdsr"><code>darribas/gdsr:1.0</code></a>. This approach is preferred for anyone using ‘Windows 10 Pro/Education’ because it avoids potential compatibility issues between the latest versions of R/RStudio and other software on your computer.</p>
 <p><strong>Please therefore follow these steps even if R/RStudio is already installed on your computer.</strong></p>
 <p><br></p>
 <div id="installing-docker" class="section level2 unlisted unnumbered">
@@ -246,7 +208,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="figs/chp3/InstallDocker1.png" width="960" style="display: block; margin: auto;" />
 <br></p>
 <ol start="2" style="list-style-type: decimal">
-<li>Download a copy of the Docker Desktop (highlighted in red on the image above). Click “Save File”. Note the file is approximately 490Mb so, depending on your internet connection, it might take a while to download.</li>
+<li>Download a copy of the Docker Desktop (highlighted in red on the image above). Click “Save File.” Note the file is approximately 490Mb so, depending on your internet connection, it might take a while to download.</li>
 <li>Double click on the file you downloaded (a cute white whale on a blue background) and the “installation wizard” will appear.</li>
 <li>Follow the instructions on the installation wizard to authorize the installer and proceed with the install.</li>
 </ol>
@@ -271,10 +233,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Open PowerShell following the same steps as above (you can use the same window as before or a fresh new one).</li>
 <li>Run (type and hit “Enter”) the following command:</li>
 </ol>
-<pre class="shell"><code>docker pull darribas/gdsr:1.0alpha</code></pre>
+<pre class="shell"><code>docker pull darribas/gdsr:1.0</code></pre>
 <p><img src="figs/chp3/InstallDocker4.png" width="600px" style="display: block; margin: auto;" />
 <br></p>
-<p>You will know this has completed when each line says ‘Pull complete’.</p>
+<p>You will know this has completed when each line says ‘Pull complete.’</p>
 <div class="alert alert-info" style="font-size:120%">
 <p><b>IMPORTANT</b>: <br></p>
 <p>Make sure you are connected to the internet and it is a stable connection. This step involves the download of large amounts of data (ca. 10GB) so it might take a while. However, it only needs to be run once.</p>
@@ -295,7 +257,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ol style="list-style-type: decimal">
 <li>In a new PowerShell window, type the following command to run the container and hit enter:</li>
 </ol>
-<pre class="shell"><code>docker run -d -e PASSWORD=test123 -p 8787:8787 -v ${PWD}:/home/rstudio/work darribas/gdsr:1.0alpha</code></pre>
+<pre class="shell"><code>docker run -d -e PASSWORD=test123 -p 8787:8787 -v ${PWD}:/home/rstudio/work darribas/gdsr:1.0</code></pre>
 <p><img src="figs/chp3/Win_RStudioServer_1.png" width="542" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <p>You have now started an RStudio session.</p>
@@ -352,12 +314,6 @@ password: test123</code></pre>
 <p>Next time you go to run a R Notebook you will NOT need to repeat the whole process as you have already installed Docker and the GDSR environment. Instead you can start from Running the container and carry on from there.</p>
 
 </div>
-</div>
-</div>
-<h3>References</h3>
-<div id="refs" class="references">
-<div id="ref-gds_env">
-<p>Arribas-Bel, Dani. 2019. <em><code>gds_env</code>: A Containerised Platform for Geographic Data Science</em> (version 5.0). <a href="https://darribas.org/gds_env">https://darribas.org/gds_env</a>.</p>
 </div>
 </div>
             </section>
