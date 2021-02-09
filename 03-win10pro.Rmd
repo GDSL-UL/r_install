@@ -126,7 +126,7 @@ Please do NOT close the PowerShell window until you are finished in this RStudio
    
 </div>
 
-2. To access this session go to your chosen web browser (e.g. Firefox/Chrome) and type: `localhost:8888` into the search bar. 
+2. To access this session go to your chosen web browser (e.g. Firefox/Chrome) and type: `localhost:8787` into the search bar. 
 3.	The page that loads will prompt you for a username and password as shown. Type the following:
 
 ```shell
