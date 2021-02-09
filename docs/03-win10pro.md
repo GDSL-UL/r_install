@@ -33,7 +33,7 @@ Once you have everything required ready to go, the first step is to install the 
 
 > [https://hub.docker.com/editions/community/docker-ce-desktop-windows/](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
 
-<img src="figs/chp3/InstallDocker1.png" width="1920" style="display: block; margin: auto;" />
+<img src="figs/chp3/InstallDocker1.png" width="960" style="display: block; margin: auto;" />
 <br>
 
 2. Download a copy of the Docker Desktop (highlighted in red on the image above). Click “Save File”. Note the file is approximately 490Mb so, depending on your internet connection, it might take a while to download. 
@@ -100,7 +100,7 @@ The following sections cover how to start up the software you have just installe
 docker run -d -e PASSWORD=test123 -p 8787:8787 -v ${PWD}:/home/rstudio/work darribas/gdsr:1.0
 ```
 
-<img src="figs/chp3/Win_RStudioServer_1.png" width="1085" style="display: block; margin: auto;" />
+<img src="figs/chp3/Win_RStudioServer_1.png" width="542" style="display: block; margin: auto;" />
 
 <br>
 
@@ -114,7 +114,7 @@ Please do NOT close the PowerShell window until you are finished in this RStudio
    
 </div>
 
-2. To access this session go to your chosen web browser (e.g. Firefox/Chrome) and type: `localhost:8888` into the search bar. 
+2. To access this session go to your chosen web browser (e.g. Firefox/Chrome) and type: `localhost:8787` into the search bar. 
 3.	The page that loads will prompt you for a username and password as shown. Type the following:
 
 ```shell
@@ -124,7 +124,7 @@ password: test123
 
 <br>
 
-<img src="figs/chp3/Win_RStudioServer_2.png" width="918" style="display: block; margin: auto;" />
+<img src="figs/chp3/Win_RStudioServer_2.png" width="459" style="display: block; margin: auto;" />
 
 Now you are in RStudio Server, you can start coding or opening a new file. Please refer to Rowe and Arribas-Bel (2021) for an introduction to the RStudio interface, R Script and R Notebook.
 
@@ -136,7 +136,7 @@ A R notebook is where you will run your code and can add text. The top header is
 
 Type 1 + 1 into a code chunk. To run the code click the play icon as highlighted in red below.
 
-<img src="figs/chp3/Win_RStudioServer_3.png" width="959" style="display: block; margin: auto;" />
+<img src="figs/chp3/Win_RStudioServer_3.png" width="480" style="display: block; margin: auto;" />
 
 <br>
 
@@ -151,29 +151,29 @@ Everything saved outside the `work` folder will be _destroyed_ as soon as you sh
 
 You can access other files on your machine through the work folder in the Files Browser. From here you can navigate to your Documents and designated folder for this module.
 
-<img src="figs/chp3/Win_RStudioServer_4.png" width="959" style="display: block; margin: auto;" />
+<img src="figs/chp3/Win_RStudioServer_4.png" width="480" style="display: block; margin: auto;" />
 
 <br>
 
 Here I am navigating to the san folder that we have created for this module in my Downloads. You can replace this with the pathway to the folder you create for this module.
 
-<img src="figs/chp3/Win_RStudioServer_5.png" width="959" style="display: block; margin: auto;" />
+<img src="figs/chp3/Win_RStudioServer_5.png" width="480" style="display: block; margin: auto;" />
 
 <br>
 
-<img src="figs/chp3/Win_RStudioServer_6.png" width="1918" style="display: block; margin: auto;" />
+<img src="figs/chp3/Win_RStudioServer_6.png" width="959" style="display: block; margin: auto;" />
 
 <br>
 
 You can save your notebook here using File > Save As.
 
-<img src="figs/chp3/Win_RStudioServer_7.png" width="525" style="display: block; margin: auto;" />
+<img src="figs/chp3/Win_RStudioServer_7.png" width="262" style="display: block; margin: auto;" />
 
 <br>
 
 And you can create new folders to organise your work.
 
-<img src="figs/chp3/Win_RStudioServer_8.png" width="647" style="display: block; margin: auto;" />
+<img src="figs/chp3/Win_RStudioServer_8.png" width="324" style="display: block; margin: auto;" />
 
 <br>
 
@@ -181,13 +181,13 @@ And you can create new folders to organise your work.
 
 Once you have finished in your RStudio session and have saved all your work, you can end the session by closing your browser.
 
-<img src="figs/chp3/Win_RStudioServer_9.png" width="1072" style="display: block; margin: auto;" />
+<img src="figs/chp3/Win_RStudioServer_9.png" width="536" style="display: block; margin: auto;" />
 
 <br>
 
 Then, type docker container stop and copy the CONTAINER ID from the output above as shown here:
 
-<img src="figs/chp3/Win_RStudioServer_10.png" width="1191" style="display: block; margin: auto;" />
+<img src="figs/chp3/Win_RStudioServer_10.png" width="596" style="display: block; margin: auto;" />
 
 You can now safely shut the terminal window.
 

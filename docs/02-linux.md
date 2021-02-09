@@ -24,14 +24,14 @@ To be able to complete this guide, your machine will need to meet the following 
 
 1. Select the page for your distribution from the [Docker Hub list of supported distributions](https://hub.docker.com/search?q=&type=edition&offering=community&operating_system=linux)
 
-<img src="figs/chp2/docker_distros.png" width="1786" style="display: block; margin: auto;" />
+<img src="figs/chp2/docker_distros.png" width="893" style="display: block; margin: auto;" />
 <br>
 
 For this example, we will use Ubuntu.
 
 2. Make sure that you meet the requirements to install Docker:
 
-<img src="figs/chp2/ubuntu.png" width="1788" style="display: block; margin: auto;" />
+<img src="figs/chp2/ubuntu.png" width="894" style="display: block; margin: auto;" />
 <br>
 
 3. Follow the steps specified on the official install guide:
@@ -51,7 +51,7 @@ Once you have Docker installed and running on your machine, installing everythin
 docker pull darribas/gdsr:1.0
 ```
 
-<img src="figs/chp2/terminal_pull.png" width="1218" style="display: block; margin: auto;" />
+<img src="figs/chp2/terminal_pull.png" width="609" style="display: block; margin: auto;" />
 <br>
 
 You will know this has completed when each line says 'Pull complete'.
@@ -67,7 +67,7 @@ Make sure you are connected to the internet and it is a stable connection. This 
 
 If everything has gone according to plan, you should see `darribas/gdsr:1.0` show up on your terminal when you type `docker image ls` (note in the image below there are other containers that are not required, do not worry if you don't have those or slightly different values on the ID and the "CREATED" columns, the important bit is having `darribas/gdsr:1.0` listed):
 
-<img src="figs/chp2/docker_image_ls.png" width="1218" style="display: block; margin: auto;" />
+<img src="figs/chp2/docker_image_ls.png" width="609" style="display: block; margin: auto;" />
 <br>
 
 ## Running RStudio {#linux_run .unnumbered}
@@ -84,7 +84,7 @@ To start up RStudio through Docker, follow these steps:
 docker run -d -e PASSWORD=test123 -p 8787:8787 -v "${PWD}":/home/rstudio/work darribas/gdsr:1.0
 ```
 
-<img src="figs/chp2/docker_run.png" width="1218" style="display: block; margin: auto;" />
+<img src="figs/chp2/docker_run.png" width="609" style="display: block; margin: auto;" />
 
 <br>
 
@@ -94,7 +94,7 @@ You have now started a RStudio session.
 
 <br>
 
-<img src="figs/chp1/Figure10.png" width="2628" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure10.png" width="1314" style="display: block; margin: auto;" />
 
 3. The page that loads will prompt you for a password. Type the following, as on the figure above:
 
@@ -104,7 +104,7 @@ You have now started a RStudio session.
 
 4. Now you are in RStudio, you can start coding or opening a new file. Please refer to  [Rowe and Arribas-Bel (2021)](https://gdsl-ul.github.io/san/data-wrangling.html#introducing-r) for an introduction to the RStudio interface, R Script and R Notebook.
 
-<img src="figs/chp1/Figure11.png" width="2620" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure11.png" width="1310" style="display: block; margin: auto;" />
 
 <br>
 
@@ -114,7 +114,7 @@ You have now started a RStudio session.
 
 - Type `1 + 1` into a code chunk. To run the code click the play icon as indicated below. 
 
-<img src="figs/chp1/Figure12.png" width="2628" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure12.png" width="1314" style="display: block; margin: auto;" />
 
 <br>
 
@@ -130,11 +130,11 @@ Everything saved outside the `work` folder will be _destroyed_ as soon as you sh
 
 - You can access other files on your machine through the `work` folder in the Files Browser. From here you can navigate to your Documents and designated folder for this module. 
 
-<img src="figs/chp1/Figure11a.png" width="2620" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure11a.png" width="1310" style="display: block; margin: auto;" />
 
-<img src="figs/chp1/Figure11b.png" width="2620" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure11b.png" width="1310" style="display: block; margin: auto;" />
 
-<img src="figs/chp1/Figure11c.png" width="2620" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure11c.png" width="1310" style="display: block; margin: auto;" />
 
 
 Here I am navigating to the san folder that we have created for this module in my Downloads. You can replace this with the pathway to the folder you create for this module.
@@ -142,12 +142,12 @@ Here I am navigating to the san folder that we have created for this module in m
 <br>
 
 - You can save your notebook here using **File** > **Save As**
-<img src="figs/chp1/Figure13_new.png" width="1060" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure13_new.png" width="530" style="display: block; margin: auto;" />
 
 <br>
 
 - And you can create new folders to organise your work
-<img src="figs/chp1/Figure14_new.png" width="1820" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure14_new.png" width="910" style="display: block; margin: auto;" />
 
 <br>
 
@@ -157,11 +157,11 @@ Once you have finished in your RStudio session and have saved all your work, you
 
 1) Run `docker ps`:
 
-<img src="figs/chp2/docker_ps.png" width="1218" style="display: block; margin: auto;" />
+<img src="figs/chp2/docker_ps.png" width="609" style="display: block; margin: auto;" />
 
 2) Then, type `docker container rm` and copy the *CONTAINER ID* from the output above as shown here:
 
-<img src="figs/chp2/docker_rm.png" width="1218" style="display: block; margin: auto;" />
+<img src="figs/chp2/docker_rm.png" width="609" style="display: block; margin: auto;" />
 
 <br>
 
