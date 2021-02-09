@@ -224,7 +224,7 @@ Once you have finished in your RStudio session and have saved all your work, you
 knitr::include_graphics("figs/chp1/Figure16.png")
 ```
 
-2) Then, type `docker container rm` and copy the *CONTAINER ID* from the output above as shown here:
+2) Then, type `docker container rm` or `docker container stop`, and copy the *CONTAINER ID* from the output above as shown here:
 
 ```{r fig16a, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure16a.png")
